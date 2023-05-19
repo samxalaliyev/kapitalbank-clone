@@ -1,0 +1,22 @@
+.swiper-nav-btn {
+  width: 80px;
+  position: relative;
+  top: -140px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  right: -1250px;
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    svg {
+      color: rgba(128, 128, 128, 0.51);
+      font-size: 26px;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

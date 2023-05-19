@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dropdown = () => {
+const DropdownCredits = () => {
   return (
     <div>
       <div className="dropdown-content">
@@ -24,17 +24,19 @@ const Dropdown = () => {
               </div>
             </div>
             <div className="right-content">
-              <div className="right-content">
+              <div className="right-parent">
                 <div className="right-left-child">
-                  <ul>
-                    <p>
-                      <strong>Gündəlik tələbat krediti</strong>
-                    </p>
-                    <p>30000 AZN dək Gündəlik tələbat krediti</p>
-                    <a href="#" className="btn">
-                      Bir kliklə sifariş et
-                    </a>
-                  </ul>
+                  <p className="child-up">
+                    Gündəlik
+                    <br />
+                    <strong> tələbat krediti</strong>
+                  </p>
+                  <p className="child-middle">
+                    30000 AZN dək Gündəlik tələbat krediti
+                  </p>
+                  <a href="#" className="btn">
+                    Bir kliklə sifariş et
+                  </a>
                 </div>
                 <div className="right-right-child">
                   <img src="https://www.kapitalbank.az/assets/static/img/main-page/daily-loan3.png" />
@@ -48,4 +50,4 @@ const Dropdown = () => {
   );
 };
 
-export default Dropdown;
+export default DropdownCredits;

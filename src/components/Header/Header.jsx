@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../Logo--main.svg";
 import { FaSearch } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,7 +10,10 @@ const Header = () => {
       <div className="header">
         <div className="container">
           <nav className="nav">
-            <img src={Logo} alt="" />
+            <Link to="/">
+              <img src={Logo} alt="" />
+            </Link>
+
             <ul>
               <li>Fiziki şəxslər üçün</li>
               <li>Biznes üçün</li>
