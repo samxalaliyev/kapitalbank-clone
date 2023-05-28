@@ -1,0 +1,79 @@
+.footer-main {
+  width: 100%;
+  background: #2e3131;
+  padding: 35px 0 24px;
+  color: #fff;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    .footer-rows {
+      display: flex;
+      justify-content: space-between;
+      .row {
+        color: #fff;
+        h3 {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            margin-bottom: 10px;
+            a {
+              color: #fff;
+              transition: 0.3s linear;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+      .download-links {
+        text-align: center;
+        h3 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          color: #fafafa;
+          margin-bottom: 24px;
+        }
+        .mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 24px;
+
+          li {
+            margin-bottom: 16px;
+            a {
+              display: flex;
+              align-items: center;
+              background: #fff;
+              border-radius: 6px;
+              padding: 6px 10px;
+              color: #2e3131;
+              min-width: 170px;
+              width: 170px;
+              img {
+                margin-right: 8px;
+                width: 24px;
+                height: 24px;
+              }
+              p {
+                display: flex;
+                flex-direction: column;
+                margin: 0 !important;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
