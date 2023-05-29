@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaPhone } from "react-icons/fa";
+import {
+  FaPhone,
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const FooterBottom = () => {
   return (
@@ -17,30 +24,73 @@ const FooterBottom = () => {
               </li>
               <li>
                 <Link>
-                  <FaPhone />
+                  <FaFacebook />
                 </Link>
               </li>
               <li>
                 <Link>
-                  <FaPhone />
+                  <FaLinkedin />
                 </Link>
               </li>
               <li>
                 <Link>
-                  <FaPhone />
+                  <FaTwitter />
                 </Link>
               </li>
               <li>
                 <Link>
-                  <FaPhone />
+                  <FaInstagram />
                 </Link>
               </li>
               <li>
                 <Link>
-                  <FaPhone />
+                  <FaYoutube />
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="footer-down">
+            <div className="down-childs">
+              <div className="child">
+                <p>© 2023 «Kapital Bank» ASC. Bütün hüquqlar qorunur.</p>
+              </div>
+              <div className="child">
+                <div className="child-icons">
+                  <Link>
+                    <img
+                      src="https://www.kapitalbank.az/assets/static/img/content/elements/png/93817465.png"
+                      alt="e-gov.az"
+                    />
+                  </Link>
+                  <Link>
+                    <img
+                      width="75"
+                      src="https://www.kapitalbank.az/assets/static/img/content/elements/png/aesf-logo.png"
+                      alt="adif.az"
+                    />
+                  </Link>
+                  <Link>
+                    <img
+                      src="https://www.kapitalbank.az/assets/static/img/content/elements/png/info.png"
+                      alt="infobank.az"
+                    />
+                  </Link>
+                  <Link>
+                    <img
+                      src="https://www.kapitalbank.az/assets/static/img/content/elements/png/msp.png"
+                      alt="bizimpullar.az"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="child content-p">
+                <p>
+                  "Kapital Bank" ASC Azərbaycan Republikasının Maliyyə
+                  Bazarlarına Nəzarət Palatasının 05 noyabr 2018-ci il tarixli
+                  244 nömrəli Bank Lisenziyası əsasında fəaliyyət göstərir.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
