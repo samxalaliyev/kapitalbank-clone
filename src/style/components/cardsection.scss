@@ -5,6 +5,10 @@
   margin-bottom: 60px;
   position: relative;
   background-color: #fff;
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
 
   .card-slider {
     height: 450px;
@@ -12,32 +16,71 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 480px) {
+      height: 1000px;
+    }
+
     .card-slider-top {
       background-color: #fff;
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-bottom: 155px;
+      }
       .container {
         max-width: 1216px;
         margin: 0 auto;
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
         .slide-title {
           font-size: 36px;
           line-height: 45px;
           font-weight: 400;
           margin-bottom: 14px;
+          strong {
+            font-weight: 600;
+          }
+          @media (min-width: 320px) and (max-width: 480px) {
+            font-size: 30px;
+            margin-bottom: 5px;
+            line-height: 37px;
+          }
         }
         p {
           font-size: 18px;
           line-height: 23px;
           max-width: 580px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            font-size: 16px;
+          }
         }
       }
     }
     .card-slider-bottom {
       background-color: $secondary;
       padding: 30px 0;
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-top: auto;
+        background-color: $secondary;
+        padding: 34px 0;
+      }
 
       .container {
         max-width: 1216px;
         margin: 0 auto;
         position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+        @media (min-width: 320px) and (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+        }
 
         ul {
           max-width: 63%;
@@ -46,13 +89,23 @@
           justify-content: space-between;
           margin-bottom: 24px;
           padding-left: 0;
-
+          @media (min-width: 320px) and (max-width: 480px) {
+            flex-direction: column;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+          }
           li {
             font-size: 16px;
             line-height: 24px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              text-align: center;
+              margin-bottom: 18px;
+            }
             span {
               display: block;
-              color: #f45369;
+              color: $main;
               font-family: system-ui, -apple-system, BlinkMacSystemFont,
                 "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
                 "Helvetica Neue", sans-serif;
@@ -79,12 +132,23 @@
           &:hover {
             background-color: #ef3e42;
           }
+          @media (min-width: 320px) and (max-width: 480px) {
+            width: 100%;
+          }
         }
       }
       .card-image {
         position: absolute;
         right: 145px;
         bottom: 0;
+        @media (min-width: 320px) and (max-width: 480px) {
+          position: unset;
+          order: -1;
+          width: 315px;
+          height: 315px;
+          margin-top: -160px;
+          text-align: center;
+        }
       }
     }
   }

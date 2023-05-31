@@ -6,6 +6,12 @@
   display: flex;
   justify-content: space-between;
   right: -1250px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    top: -550px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
   button {
     border: none;
     background-color: transparent;

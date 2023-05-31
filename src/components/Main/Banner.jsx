@@ -44,7 +44,7 @@ const Banner = () => {
   };
 
   return (
-    <div>
+    <div className="div-main">
       <Slider {...settings}>
         <div className="banner">
           <div className="banner-main">
