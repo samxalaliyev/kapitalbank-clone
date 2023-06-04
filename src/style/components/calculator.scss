@@ -5,15 +5,26 @@
   background-color: #fff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 100%;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     h1 {
       font-size: 36px;
       line-height: 45px;
       font-weight: 400;
       margin-bottom: 14px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-weight: 600;
+      }
     }
     .calculator-main {
       display: flex;
@@ -21,6 +32,9 @@
       padding-top: 30px;
       flex-wrap: wrap;
       .calculator-left {
+        @media (min-width: 320px) and (max-width: 480px) {
+          max-width: 100%;
+        }
         h3 {
           font-size: 24px !important;
           font-weight: 400 !important;
@@ -31,6 +45,9 @@
           font-weight: 400 !important;
 
           margin-bottom: 20px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            font-size: 16px;
+          }
         }
         .ranges {
           margin-top: 35px;
@@ -38,12 +55,20 @@
           flex-direction: column;
           justify-content: space-between;
           height: 250px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            max-width: 100%;
+          }
           .range-values {
             display: flex;
             width: 680px;
             margin: 15px 0;
             justify-content: space-between;
             font-size: 14px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              width: 100%;
+              font-size: 12px;
+              opacity: 0.8;
+            }
           }
           .range-loan {
             width: 680px;
@@ -53,6 +78,9 @@
             border: 1px solid rgb(128, 128, 128, 0.5);
             border-bottom: 0;
             border-radius: 8px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              width: 100%;
+            }
             label {
               display: flex;
               flex-direction: column;
@@ -67,6 +95,10 @@
               }
               .inner-amount {
                 font-size: 18px;
+                @media (min-width: 320px) and (max-width: 480px) {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
               }
             }
 
@@ -91,6 +123,10 @@
       }
     }
     .calculator-right {
+      @media (min-width: 320px) and (max-width: 480px) {
+        width: 100%;
+      }
+
       .payment-section {
         border-radius: 8px;
         border: 1px solid #eaeaea;
@@ -100,18 +136,35 @@
         min-height: 329px;
         display: flex;
         flex-direction: column;
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-left: 0;
+          margin-top: 90px;
+          padding: 24px 15px;
+          min-height: auto;
+        }
         .month-payment {
           font-size: 24px !important;
           line-height: 36px;
           margin-bottom: 33px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            margin-bottom: 14px;
+            font-size: 20px !important;
+          }
         }
         .month-payment-bottom {
           margin-bottom: 51px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            margin-bottom: 24px;
+          }
           span {
             color: #f45369;
             font-size: 56px;
             font-weight: 600;
             line-height: 70px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              font-size: 48px;
+              line-height: 60px;
+            }
           }
         }
       }
@@ -128,6 +181,9 @@
         border: none;
         cursor: pointer;
         transition: 0.3s linear;
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 100%;
+        }
       }
     }
   }

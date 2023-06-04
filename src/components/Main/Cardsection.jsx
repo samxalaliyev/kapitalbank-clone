@@ -202,7 +202,10 @@ const Cardsection = () => {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperNavButton />
+      <div className="navigate-btns">
+        <SwiperNavButton isPrevButton={true} buttonClassName="prev-button" />
+        <SwiperNavButton isNextButton={true} buttonClassName="next-button" />
+      </div>
     </Swiper>
   );
 };

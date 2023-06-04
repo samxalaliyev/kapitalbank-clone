@@ -15,18 +15,18 @@ const DailyLoan = () => {
                 30000 AZN-dək, arzularınızı reallaşdırmaq və ya ehtiyaclarınızı
                 ödəmək üçün nağd kredit təklif edirik.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="daily-loan-bottom">
-          <div className="container">
-            <div className="bottom-content">
               <div className="loan-img">
                 <img
                   src="https://www.kapitalbank.az/assets/static/img/main-page/daily-loan3.png"
                   alt="Gundelik telebat krediti"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="daily-loan-bottom">
+          <div className="container">
+            <div className="bottom-content">
               <div className="list-and-button">
                 <ul className="loan-list">
                   <li>

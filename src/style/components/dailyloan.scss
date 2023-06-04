@@ -2,18 +2,43 @@
   width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  @media (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
   .daily-loan-top {
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-bottom: 34px;
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
       .top-content {
         padding-left: 400px;
+        position: relative;
+        @media (min-width: 320px) and (max-width: 480px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding-left: initial;
+        }
         .loan-title {
           font-size: 36px;
           line-height: 45px;
           font-weight: 400;
           margin-bottom: 14px;
           opacity: 0.8;
+          @media (min-width: 320px) and (max-width: 480px) {
+            font-size: 30px;
+            margin-bottom: 5px;
+            line-height: 37px;
+          }
         }
         p {
           font-size: 16px;
@@ -21,6 +46,23 @@
           font-weight: 600;
           opacity: 0.8;
           margin-bottom: 40px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            margin-bottom: 0;
+          }
+        }
+        .loan-img {
+          position: absolute;
+          left: -50px;
+          bottom: -250px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            position: unset;
+            margin-bottom: -140px;
+            text-align: center;
+            margin-top: 0;
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -28,7 +70,9 @@
   .daily-loan-bottom {
     width: 100%;
     background-color: $secondary;
-
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding-top: 105px;
+    }
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -37,25 +81,36 @@
         padding-top: 50px;
         padding-bottom: 50px;
         padding-left: 400px;
-
-        .loan-img {
-          position: absolute;
-          left: -80px;
-          bottom: 40px;
+        @media (min-width: 320px) and (max-width: 480px) {
+          padding: 24px 15px;
         }
+
         .list-and-button {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          @media (min-width: 320px) and (max-width: 480px) {
+            align-items: center;
+          }
 
           .loan-list {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            text-align: center;
             padding: 20px 0;
+            @media (min-width: 320px) and (max-width: 480px) {
+              flex-wrap: initial;
+              justify-content: initial;
+              flex-direction: column;
+              padding: 0;
+            }
 
             li {
               margin-right: 30px;
+              @media (min-width: 320px) and (max-width: 480px) {
+                margin-bottom: 20px;
+              }
               span {
                 display: block;
                 color: #f45369;
@@ -70,6 +125,9 @@
             display: flex;
             justify-content: flex-end;
             padding-right: 30px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              margin-top: 0;
+            }
             .btn {
               width: 280px;
               height: 50px;

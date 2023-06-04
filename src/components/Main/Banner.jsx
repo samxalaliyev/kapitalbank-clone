@@ -1,67 +1,52 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Navigation } from "swiper";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", right: "160px", top: "250px" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-
-        left: "1290px",
-        zIndex: "5",
-        top: "250px",
-      }}
-      onClick={onClick}
-    />
-  );
-}
+import "swiper/css";
+import "swiper/css/effect-fade";
+import SwiperNavButton from "./SwiperNavButton";
 
 const Banner = () => {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
-
   return (
-    <div className="div-main">
-      <Slider {...settings}>
+    <Swiper
+      // spaceBetween={30}
+      loop={true}
+      navigation={true}
+      modules={[EffectFade, Navigation]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
         <div className="banner">
           <div className="banner-main">
             <div className="container">
               <div className="banner-content">
                 <div className="left-content">
-                  <div className="banner-text">
-                    <p>
-                      <span className="font-sm">Nağd krediti onlayn almaq</span>
-                      <br />
-                      <span className="font-bold">5% daha sərfəlidir!</span>
-                    </p>
+                  <div className="left-items">
+                    <div className="banner-text">
+                      <p>
+                        <span className="font-sm">
+                          Nağd krediti onlayn almaq
+                        </span>
+                        <br />
+                        <span className="font-bold">5% daha sərfəlidir!</span>
+                      </p>
+                    </div>
+                    <div className="banner-button">
+                      <Link to="/" className="btn">
+                        Sifariş et
+                      </Link>
+                    </div>
                   </div>
-                  <div className="banner-button">
-                    <Link to="/" className="btn">
-                      Sifariş et
-                    </Link>
+                  <div className="navigate-btns">
+                    <SwiperNavButton
+                      isPrevButton={true}
+                      buttonClassName="prev-button"
+                    />
+                    <SwiperNavButton
+                      isNextButton={true}
+                      buttonClassName="next-button"
+                    />
                   </div>
                 </div>
                 <div className="right-content">
@@ -75,22 +60,37 @@ const Banner = () => {
             </div>
           </div>
         </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
         <div className="banner">
           <div className="banner-main">
             <div className="container">
               <div className="banner-content">
                 <div className="left-content">
-                  <div className="banner-text">
-                    <p>
-                      <span className="font-sm">Onlayn sifariş etmək,</span>
-                      <br />
-                      <span className="font-bold">2 qat sərfəlidir!</span>
-                    </p>
+                  <div className="left-items">
+                    <div className="banner-text">
+                      <p>
+                        <span className="font-sm">Onlayn sifariş etmək,</span>
+                        <br />
+                        <span className="font-bold">2 qat sərfəlidir!</span>
+                      </p>
+                    </div>
+                    <div className="banner-button">
+                      <Link to="/" className="btn">
+                        Sifariş et
+                      </Link>
+                    </div>
                   </div>
-                  <div className="banner-button">
-                    <Link to="/" className="btn">
-                      Sifariş et
-                    </Link>
+                  <div className="navigate-btns">
+                    <SwiperNavButton
+                      isPrevButton={true}
+                      buttonClassName="prev-button"
+                    />
+                    <SwiperNavButton
+                      isNextButton={true}
+                      buttonClassName="next-button"
+                    />
                   </div>
                 </div>
                 <div className="right-content">
@@ -104,31 +104,47 @@ const Banner = () => {
             </div>
           </div>
         </div>
-
+      </SwiperSlide>
+      <SwiperSlide>
         <div className="banner">
           <div className="banner-main">
             <div className="container">
               <div className="banner-content">
                 <div className="left-content">
-                  <div className="banner-text">
-                    <p>
-                      <span className="font-bold">İpoteka krediti</span>
-                      <br />
-                      <span className="font-xs">
-                        Mənzil sahibi olmaq və ya yeniləmək istəyənlər üçün
-                      </span>
-                    </p>
+                  <div className="left-items">
+                    <div className="banner-text">
+                      <p>
+                        <span className="font-bold">İpoteka krediti</span>
+                        <br />
+                        <span className="font-xs">
+                          Mənzil sahibi olmaq və ya yeniləmək istəyənlər üçün
+                        </span>
+                      </p>
+                    </div>
+                    <div className="banner-button">
+                      <Link to="/" className="btn">
+                        Daha ətraflı
+                      </Link>
+                    </div>
                   </div>
-                  <div className="banner-button">
-                    <Link to="/" className="btn">
-                      Daha ətraflı
-                    </Link>
+                  <div className="navigate-btns">
+                    <SwiperNavButton
+                      isPrevButton={true}
+                      buttonClassName="prev-button"
+                    />
+                    <SwiperNavButton
+                      isNextButton={true}
+                      buttonClassName="next-button"
+                    />
                   </div>
                 </div>
                 <div className="right-content">
                   <div className="banner-img">
                     <picture>
-                      <img src="https://www.kapitalbank.az/images/slider/version_48/ipoteka-krediti1655890221.png" />
+                      <img
+                        className="ipotek-img"
+                        src="https://www.kapitalbank.az/images/slider/version_48/ipoteka-krediti1655890221.png"
+                      />
                     </picture>
                   </div>
                 </div>
@@ -136,25 +152,39 @@ const Banner = () => {
             </div>
           </div>
         </div>
+      </SwiperSlide>
+      <SwiperSlide>
         <div className="banner">
           <div className="banner-main">
             <div className="container">
               <div className="banner-content">
                 <div className="left-content">
-                  <div className="banner-text">
-                    <p>
-                      <span className="font-bold">Həftəsonu iş rejimi</span>
-                      <br />
-                      <span className="font-xs">
-                        Bir çox filiallarımız şənbə və bazar günü də fəaliyyət
-                        göstərir.
-                      </span>
-                    </p>
+                  <div className="left-items">
+                    <div className="banner-text">
+                      <p>
+                        <span className="font-bold">Həftəsonu iş rejimi</span>
+                        <br />
+                        <span className="font-xs">
+                          Bir çox filiallarımız şənbə və bazar günü də fəaliyyət
+                          göstərir.
+                        </span>
+                      </p>
+                    </div>
+                    <div className="banner-button">
+                      <Link to="/" className="btn">
+                        Daha ətraflı
+                      </Link>
+                    </div>
                   </div>
-                  <div className="banner-button">
-                    <Link to="/" className="btn">
-                      Daha ətraflı
-                    </Link>
+                  <div className="navigate-btns">
+                    <SwiperNavButton
+                      isPrevButton={true}
+                      buttonClassName="prev-button"
+                    />
+                    <SwiperNavButton
+                      isNextButton={true}
+                      buttonClassName="next-button"
+                    />
                   </div>
                 </div>
                 <div className="right-content">
@@ -168,8 +198,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
-      </Slider>
-    </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

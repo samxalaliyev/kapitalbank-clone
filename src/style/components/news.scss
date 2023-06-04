@@ -6,9 +6,16 @@
   padding-bottom: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding-top: 24px;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .news-top {
       display: flex;
       justify-content: space-between;
@@ -21,6 +28,10 @@
         font-size: 36px;
         line-height: 45px;
         font-weight: 500;
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 28px;
+          line-height: 37px;
+        }
       }
       .news-link {
         display: flex;
@@ -28,6 +39,9 @@
         color: #f45369;
         span {
           margin-right: 10px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            font-weight: 300;
+          }
         }
         svg {
           font-size: 22px;
@@ -47,34 +61,51 @@
         align-items: center;
         .news-slider {
           display: block;
-          .slick-list {
-            width: 1200px;
-          }
+          width: 100%;
           .slick-prev {
             display: none !important;
           }
-
-          .news-item {
-            display: flex;
-            flex-wrap: wrap;
-            .news-item-day {
+          .slick-next {
+            right: 5px;
+            &::before {
+              font-size: 28px;
+              opacity: 1;
+            }
+          }
+          a {
+            color: black;
+            .news-item {
               display: flex;
-              flex-direction: column;
-              align-items: center;
-              margin-right: 45px;
-              .day {
+              cursor: pointer;
+              .news-item-day {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
-                width: 48px;
-                height: 48px;
-                border: 1px solid #f45369 !important;
-                border-radius: 50%;
-                margin-bottom: 10px;
+                margin-right: 45px;
+                .day {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 24px;
+                  width: 48px;
+                  height: 48px;
+                  border: 1px solid #f45369 !important;
+                  border-radius: 50%;
+                  margin-bottom: 10px;
+                }
+              }
+              .news-item-content {
+                max-width: 220px;
               }
             }
-            .news-item-content {
-              max-width: 220px;
+            &:hover {
+              .day {
+                background-color: $main;
+                color: #fff;
+              }
+              .news-item-content {
+                color: $main;
+              }
             }
           }
         }

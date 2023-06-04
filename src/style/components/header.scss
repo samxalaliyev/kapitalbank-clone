@@ -56,7 +56,7 @@
 
       ///Mobile Header
       .mobile-ul {
-        display: flex;
+        display: none;
         justify-content: flex-end;
         @media (min-width: 320px) and (max-width: 480px) {
           li {

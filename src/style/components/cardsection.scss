@@ -153,3 +153,21 @@
     }
   }
 }
+
+.navigate-btns {
+  width: 100px;
+  display: flex;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    .prev-button {
+      position: absolute;
+      left: 20px;
+    }
+    .next-button {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
