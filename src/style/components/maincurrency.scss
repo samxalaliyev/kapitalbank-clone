@@ -13,10 +13,16 @@
     .main-content {
       display: flex;
       justify-content: space-between;
+      @media (min-width: 320px) and (max-width: 480px) {
+        flex-wrap: wrap;
+      }
       .main-left {
         width: 100%;
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%;
+        @media (min-width: 320px) and (max-width: 480px) {
+          display: none;
+        }
         .left-text {
           width: 100%;
           padding-bottom: 45px;
