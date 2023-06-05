@@ -7,20 +7,32 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .footer-bottom {
       display: flex;
       justify-content: flex-start;
       padding-bottom: 20px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        justify-content: center;
+        padding-bottom: 0;
+      }
       ul {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         height: 100%;
         align-items: center;
         padding: 0;
         margin: 0;
+
         li {
           padding: 4px 7px;
           padding-right: 30px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            padding-right: 20px;
+          }
           a {
             color: #fff;
             font-size: 20px;
@@ -64,21 +76,47 @@
       padding-top: 24px;
       color: #fff;
       font-size: 14px;
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-top: 15px;
+      }
       .down-childs {
         display: flex;
         flex-wrap: wrap;
-
         justify-content: space-between;
+        @media (min-width: 320px) and (max-width: 480px) {
+          justify-content: center;
+        }
 
         .child {
           display: flex;
           align-items: center;
+          @media (min-width: 320px) and (max-width: 480px) {
+            &:not(:nth-child(2)) {
+              order: 1;
+            }
+            &:first-child {
+              text-align: center;
+            }
+          }
+
           .child-icons {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            @media (min-width: 320px) and (max-width: 480px) {
+              justify-content: center;
+              margin-bottom: 15px;
+            }
             a {
               padding-left: 30px;
+              @media (min-width: 320px) and (max-width: 480px) {
+                &:first-child {
+                  padding-left: 0;
+                }
+                &:last-child {
+                  margin-top: 20px;
+                }
+              }
             }
           }
         }
@@ -89,6 +127,12 @@
           align-items: center;
           flex: 0 0 50%;
           max-width: 50%;
+          @media (min-width: 320px) and (max-width: 480px) {
+            text-align: center;
+            flex: initial;
+            max-width: initial;
+            margin-top: 30px;
+          }
           p {
             white-space: pre-wrap;
           }

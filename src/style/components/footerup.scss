@@ -9,18 +9,36 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .footer-rows {
       display: flex;
       justify-content: space-between;
+      @media (min-width: 320px) and (max-width: 480px) {
+        flex-wrap: wrap;
+      }
       .row {
         color: #fff;
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-bottom: 34px;
+          width: 50%;
+          padding-left: 15px;
+        }
         h3 {
           font-size: 14px;
           margin-bottom: 10px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            margin-bottom: 14px;
+          }
         }
         ul {
           li {
             margin-bottom: 10px;
+            @media (min-width: 320px) and (max-width: 480px) {
+              margin-bottom: 14px;
+            }
             a {
               color: #fff;
               transition: 0.3s linear;
@@ -33,12 +51,23 @@
       }
       .download-links {
         text-align: center;
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 100%;
+        }
         h3 {
           font-weight: 700;
           font-size: 14px;
           line-height: 18px;
           color: #fafafa;
           margin-bottom: 24px;
+          @media (min-width: 320px) and (max-width: 480px) {
+            display: none;
+          }
+        }
+        img {
+          @media (min-width: 320px) and (max-width: 480px) {
+            display: none;
+          }
         }
         .mobile {
           display: flex;
@@ -57,10 +86,18 @@
               color: #2e3131;
               min-width: 170px;
               width: 170px;
+              @media (min-width: 320px) and (max-width: 480px) {
+                width: 200px;
+                padding: 8px 20px;
+              }
               img {
                 margin-right: 8px;
                 width: 24px;
                 height: 24px;
+
+                @media (min-width: 320px) and (max-width: 480px) {
+                  display: block;
+                }
               }
               p {
                 display: flex;
