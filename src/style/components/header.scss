@@ -41,7 +41,6 @@
           font-size: 14px;
           color: #2e3131;
           &:not(:first-child) {
-            font-family: "Source Sans Pro", sans-serif;
             font-weight: 200;
             font-style: inherit;
             font-size: 14px;
@@ -80,5 +79,157 @@
       }
       ///Mobile Header
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-nav-open {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 15;
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    .mobile-main {
+      background-color: #fff;
+      .mobile-menu-header {
+        padding: 22px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #e8ecf1;
+        .container {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          .header-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ul {
+              display: flex;
+              align-items: center;
+              li {
+                a {
+                  border-radius: 4px;
+                  border: 1px solid #e9ecf0;
+                  margin-right: 20px;
+                  width: 29px;
+                  height: 28px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  color: #969898;
+                }
+                .active {
+                  color: #fff;
+                  background-color: $main;
+                }
+              }
+            }
+            .search-close {
+              li {
+                border: 1px solid $primary;
+                padding: 5px 5px 2.5px 5px;
+                border-radius: 5px;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+      .mobile-middle {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        ul {
+          display: flex;
+          li {
+            margin-right: 8px;
+            a {
+              background: #e8ecf1;
+              border-radius: 37px;
+              padding: 8px 10px 9px;
+              color: #969898;
+              font-size: 12px;
+              line-height: 15px;
+            }
+            .active {
+              color: #fff;
+              background-color: $main;
+            }
+          }
+        }
+      }
+      .mobile-content {
+        height: 100%;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        .accordion {
+          padding-top: 25px;
+          p {
+            padding-left: 25px;
+            padding-bottom: 15px;
+            font-weight: 600;
+            font-size: 14px;
+          }
+          .main-li {
+            height: 100%;
+
+            padding-bottom: 10px !important;
+
+            label {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              font-weight: 600;
+              &::before {
+                content: "+";
+                margin-right: 10px;
+                font-size: 24px;
+                font-weight: 600;
+              }
+            }
+            .child-ul {
+              padding-left: 35px;
+              line-height: 16px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.5s, padding 0.5s;
+              li {
+                padding-bottom: 15px !important;
+                font-size: 14px;
+              }
+            }
+
+            input[type="radio"] {
+              display: none;
+            }
+            input[type="radio"]:checked + label + .child-ul {
+              max-height: 400px;
+            }
+            input[type="radio"]:checked + label {
+              &::before {
+                content: "-";
+                color: $main;
+                font-size: 40px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .mobile-nav-open {
+    display: none;
   }
 }
