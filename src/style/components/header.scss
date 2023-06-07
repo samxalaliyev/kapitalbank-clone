@@ -87,10 +87,12 @@
     display: none;
   }
   .mobile-nav-open {
-    position: absolute;
+    position: fixed;
+    left: 0;
     top: 0;
+    overflow: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     z-index: 15;
     background-color: #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -172,6 +174,9 @@
         padding-right: 15px !important;
         .accordion {
           padding-top: 25px;
+          a {
+            color: #2e3131;
+          }
           p {
             padding-left: 25px;
             padding-bottom: 15px;
@@ -205,13 +210,62 @@
                 padding-bottom: 15px !important;
                 font-size: 14px;
               }
+              .card-img {
+                width: 100%;
+                margin-top: 15px;
+                .card-content {
+                  display: flex;
+                  align-items: center;
+                  .img-content {
+                    height: 100%;
+                    img {
+                      max-width: 100px;
+                      margin-right: 14px;
+                    }
+                  }
+                  .text-content {
+                    .img-title {
+                      font-size: 18px;
+                      font-weight: 600;
+                      line-height: 23px;
+                      margin-bottom: 12px;
+                      padding-left: 0;
+                      padding-bottom: 0;
+                    }
+                    .img-text {
+                      max-width: 230px;
+                      font-size: 12px;
+                      line-height: 17px;
+                      padding-left: 0;
+                      padding-bottom: 0;
+                      margin-bottom: 10px;
+                      font-weight: 400;
+                    }
+                    a {
+                      font-size: 12px;
+                      line-height: 15px;
+                      min-width: 155px;
+                      width: auto;
+                      background-color: #f45369;
+                      border-radius: 8px;
+                      display: inline-block;
+                      padding: 11px 20px 14px;
+                      color: #fff !important;
+                      text-align: center;
+                      border: none;
+                      cursor: pointer;
+                      transition: 0.3s linear;
+                    }
+                  }
+                }
+              }
             }
 
             input[type="radio"] {
               display: none;
             }
             input[type="radio"]:checked + label + .child-ul {
-              max-height: 400px;
+              max-height: 600px;
             }
             input[type="radio"]:checked + label {
               &::before {
@@ -219,6 +273,26 @@
                 color: $main;
                 font-size: 40px;
                 padding-bottom: 10px;
+              }
+            }
+          }
+        }
+        hr {
+          margin: 15px;
+          border-top: 2px solid gray;
+          opacity: 0.3;
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+        .mobile-footer {
+          ul {
+            padding-bottom: 20px;
+            li {
+              padding-top: 10px !important;
+              padding-bottom: 10px !important;
+              a {
+                font-size: 16px !important;
+                color: #2e3131;
               }
             }
           }

@@ -152,19 +152,59 @@ const Header = () => {
                   <input type="radio" name="accordion" id="kartlar" checked />
                   <label htmlFor="kartlar">KARTLAR</label>
                   <ul className="child-ul">
-                    <li>Bütün kartlar</li>
-                    <li>Taksit kartlar</li>
-                    <li>Debet kartlar</li>
-                    <li>Digital kart</li>
-                    <li>Taksit</li>
-                    <li>Hədiyyə kartı</li>
-                    <li>Kartın müddətinin uzadılması</li>
-                    <li>Kartlar üzrə xidmətlər</li>
-                    <li>Təhlükəsizlik qaydaları</li>
-                    <li>3D secure</li>
-                    <li>Kart sifarişi</li>
+                    <li>
+                      <Link>Bütün kartlar</Link>
+                    </li>
+                    <li>
+                      <Link>Taksit kartlar</Link>
+                    </li>
+                    <li>
+                      <Link>Debet kartlar</Link>
+                    </li>
+                    <li>
+                      <Link>Digital kart</Link>
+                    </li>
+                    <li>
+                      <Link>Taksit</Link>
+                    </li>
+                    <li>
+                      <Link>Hədiyyə kartı</Link>
+                    </li>
+                    <li>
+                      <Link>Kartın müddətinin uzadılması</Link>
+                    </li>
+                    <li>
+                      <Link>Kartlar üzrə xidmətlər</Link>
+                    </li>
+                    <li>
+                      <Link>Təhlükəsizlik qaydaları</Link>
+                    </li>
+                    <li>
+                      <Link>3D secure</Link>
+                    </li>
+                    <li>
+                      <Link>Kart sifarişi</Link>
+                    </li>
+                    <div className="card-img">
+                      <div className="card-content">
+                        <div className="img-content">
+                          <img
+                            src="https://www.kapitalbank.az/images/cards/D/birbank-cashback-debet1656680037.png?v=3"
+                            alt="Birbank Cashback taksit"
+                          />
+                        </div>
+                        <div className="text-content">
+                          <p className="img-title">Birbank Cashback taksit</p>
+                          <p className="img-text">
+                            Kartla edilən nağdsız ödənişlərə minimum 1.5%-dən
+                            başlayan keşbek, faizsiz və komissiyasız taksit
+                            imkanı verən unikal bir kartdır.
+                          </p>
+                          <Link to="/"> Bir kliklə sifariş et</Link>
+                        </div>
+                      </div>
+                    </div>
                   </ul>
-                  <div className="card-img"></div>
                 </li>
 
                 <li className="main-li">
@@ -172,19 +212,51 @@ const Header = () => {
                   <label htmlFor="kreditler">KREDİTLƏR</label>
                   <ul className="child-ul">
                     <li style={{ color: "#ef3e42" }}>
-                      Çoxdan gözlənilən nağd kredit endirimi!
+                      <Link>Çoxdan gözlənilən nağd kredit endirimi!</Link>
                     </li>
-                    <li>Bütün kreditlər</li>
-                    <li>Nağd pul kediti</li>
-                    <li>Mikro Biznes Keditləri</li>
-                    <li>Təminatlı manat krediti</li>
-                    <li>Əmanət təminatlı kredit</li>
-                    <li>Avtomobil krediti</li>
-                    <li>Daşınmaz əmlak təminatlı kredit</li>
+                    <li>
+                      <Link>Bütün kreditlər</Link>
+                    </li>
+                    <li>
+                      <Link>Nağd pul kediti</Link>
+                    </li>
+                    <li>
+                      <Link>Mikro Biznes Keditləri</Link>
+                    </li>
+                    <li>
+                      <Link>Təminatlı manat krediti</Link>
+                    </li>
+                    <li>
+                      <Link>Əmanət təminatlı kredit</Link>
+                    </li>
+                    <li>
+                      <Link>Avtomobil krediti</Link>
+                    </li>
+                    <li>
+                      <Link>Daşınmaz əmlak təminatlı kredit</Link>
+                    </li>
+                    <div className="card-img">
+                      <div className="card-content">
+                        <div className="img-content">
+                          <img
+                            src="https://www.kapitalbank.az/assets/static/img/main-page/daily-loan3.png"
+                            alt="Nağd pul krediti"
+                          />
+                        </div>
+                        <div className="text-content">
+                          <p className="img-title"> Nağd pul krediti</p>
+                          <p className="img-text">
+                            30000 AZN dək Nağd pul krediti
+                          </p>
+                          <Link to="/"> Bir kliklə sifariş et</Link>
+                        </div>
+                      </div>
+                    </div>
                   </ul>
-                  <div className="card-img"></div>
                 </li>
-                <p>İPOTEKALAR</p>
+                <p>
+                  <Link>İPOTEKALAR</Link>
+                </p>
                 <li className="main-li">
                   <input
                     type="radio"
@@ -194,12 +266,37 @@ const Header = () => {
                   />
                   <label htmlFor="depozitler">DEPOZİTLƏR</label>
                   <ul className="child-ul">
-                    <li>Bütün depozitlər</li>
-                    <li>Kapital depoziti</li>
-                    <li>Müddətsiz depozit</li>
-                    <li>Depozit seyfləri</li>
+                    <li>
+                      <Link>Bütün depozitlər</Link>
+                    </li>
+                    <li>
+                      <Link>Kapital depoziti</Link>
+                    </li>
+                    <li>
+                      <Link>Müddətsiz depozit</Link>
+                    </li>
+                    <li>
+                      <Link>Depozit seyfləri</Link>
+                    </li>
+                    <div className="card-img">
+                      <div className="card-content">
+                        <div className="img-content">
+                          <img
+                            src="https://www.kapitalbank.az/assets/static/img/menu/deposits.png"
+                            alt="Kapital depoziti"
+                          />
+                        </div>
+                        <div className="text-content">
+                          <p className="img-title">Kapital depoziti</p>
+                          <p className="img-text">
+                            Yüksək faiz əldə etməklə yanaşı müddətin yarısınadək
+                            məbləğı artırın.
+                          </p>
+                          <Link to="/"> Bir kliklə sifariş et</Link>
+                        </div>
+                      </div>
+                    </div>
                   </ul>
-                  <div className="card-img"></div>
                 </li>
                 <li className="main-li">
                   <input
@@ -215,8 +312,26 @@ const Header = () => {
                     <li>Xəzri</li>
                     <li>Zolotoya Korona</li>
                     <li>Western Union</li>
+                    <div className="card-img">
+                      <div className="card-content">
+                        <div className="img-content">
+                          <img
+                            src="https://www.kapitalbank.az/assets/static/img/menu/bblogo.png"
+                            alt="Birbank"
+                          />
+                        </div>
+                        <div className="text-content">
+                          <p className="img-title"> Birbank </p>
+                          <p className="img-text">
+                            Birbankla istənilən karta pul köçürün! Artıq
+                            Birbankla telefonunuzdan istənilən bank kartına
+                            asanlıqla pul göndərə bilərsiniz.
+                          </p>
+                          <Link to="/"> Daha ətraflı</Link>
+                        </div>
+                      </div>
+                    </div>
                   </ul>
-                  <div className="card-img"></div>
                 </li>
                 <li className="main-li">
                   <input
@@ -227,19 +342,103 @@ const Header = () => {
                   />
                   <label htmlFor="onlaynxidmetler">ONLAYN XİDMƏTLƏR</label>
                   <ul className="child-ul">
-                    <li>Bütün online xidmətlər</li>
-                    <li>Kart siafrişi</li>
-                    <li>Kredot sifarişi</li>
-                    <li>Kredit ödənişi</li>
-                    <li>Kommunal ödənişləri</li>
-                    <li>Onlayn növbə</li>
-                    <li>Arayış və çıxarışların alınması</li>
+                    <li>
+                      <Link>Bütün online xidmətlər</Link>
+                    </li>
+                    <li>
+                      <Link>Kart siafrişi</Link>
+                    </li>
+                    <li>
+                      <Link>Kredit sifarişi</Link>
+                    </li>
+                    <li>
+                      <Link>Kredit ödənişi</Link>
+                    </li>
+                    <li>
+                      <Link>Kommunal ödənişləri</Link>
+                    </li>
+                    <li>
+                      <Link>Onlayn növbə</Link>
+                    </li>
+                    <li>
+                      <Link>Arayış və çıxarışların alınması</Link>
+                    </li>
+                    <div className="card-img">
+                      <div className="card-content">
+                        <div className="img-content">
+                          <img
+                            src="https://www.kapitalbank.az/images/cards/D/birbank-cashback-debet1656680037.png?v=3"
+                            alt="Birbank Cashback taksit"
+                          />
+                        </div>
+                        <div className="text-content">
+                          <p className="img-title">Birbank Cashback taksit</p>
+                          <p className="img-text">
+                            Kartla edilən nağdsız ödənişlərə minimum 1.5%-dən
+                            başlayan keşbek, faizsiz və komissiyasız taksit
+                            imkanı verən unikal bir kartdır.
+                          </p>
+                          <Link to="/"> Bir kliklə sifariş et</Link>
+                        </div>
+                      </div>
+                    </div>
                   </ul>
-                  <div className="card-img"></div>
                 </li>
-                <p>KAMPANİYALAR</p>
-                <p>FƏRDİ BANKÇILIQ</p>
+                <p>
+                  <Link>KAMPANİYALAR</Link>
+                </p>
+                <p>
+                  <Link>FƏRDİ BANKÇILIQ</Link>
+                </p>
               </ul>
+              <hr />
+              <div className="mobile-footer">
+                <ul>
+                  <li>
+                    <Link>Bank haqqında</Link>
+                  </li>
+                  <li>
+                    <Link>İnsan resusları</Link>
+                  </li>
+                  <li>
+                    <Link>Xidmət şəbəkəsi</Link>
+                  </li>
+                  <li>
+                    <Link>Birbank</Link>
+                  </li>
+                  <li>
+                    <Link>Xəbərlər</Link>
+                  </li>
+                  <li>
+                    <Link>Sığortalar</Link>
+                  </li>
+                  <li>
+                    <Link>təklif və şikayətlər</Link>
+                  </li>
+                  <hr />
+                  <li>
+                    <Link>Kart sifarişi</Link>
+                  </li>
+                  <li>
+                    <Link>Kredit sifarişi</Link>
+                  </li>
+                  <li>
+                    <Link>Kredit ödənişi</Link>
+                  </li>
+                  <li>
+                    <Link>Onlayn ödənişlər</Link>
+                  </li>
+                  <li>
+                    <Link>FAQ</Link>
+                  </li>
+                  <li>
+                    <Link>Tariflər</Link>
+                  </li>
+                  <li>
+                    <Link>ATM xidmətləri</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         )}
