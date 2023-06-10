@@ -39,7 +39,9 @@
             sans-serif;
           font-weight: 400;
           font-size: 14px;
-          color: #2e3131;
+          a {
+            color: #2e3131;
+          }
           &:not(:first-child) {
             font-weight: 200;
             font-style: inherit;
@@ -192,9 +194,17 @@
           .main-li {
             height: 100%;
             padding-bottom: 10px !important;
-            .main-li.active .child-ul {
-              display: block;
+            .main-li.active {
+              .child-ul {
+                display: block;
+              }
+              .menu-btn {
+                .menu-icon {
+                  color: #f45369;
+                }
+              }
             }
+
             .menu-btn {
               display: flex;
               align-items: center;

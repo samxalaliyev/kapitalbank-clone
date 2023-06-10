@@ -28,8 +28,11 @@
               text-transform: none;
               border: none;
               cursor: pointer;
-              &:hover {
-                color: $primary;
+              a {
+                color: black;
+                &:hover {
+                  color: $primary;
+                }
               }
             }
           }

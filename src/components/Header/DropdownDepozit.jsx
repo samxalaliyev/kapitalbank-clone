@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DropdownDepozit = () => {
   return (
@@ -9,9 +10,15 @@ const DropdownDepozit = () => {
             <div className="left-content">
               <div className="left-parent">
                 <ul className="left-ul">
-                  <li className="ul-child">Kapital depoziti</li>
-                  <li className="ul-child">Müddətsiz depozit</li>
-                  <li className="ul-child">Depozit seyfləri</li>
+                  <li className="ul-child">
+                    <Link to="/deposits">Kapital depoziti</Link>
+                  </li>
+                  <li className="ul-child">
+                    <Link to="/deposits">Müddətsiz depozit</Link>
+                  </li>
+                  <li className="ul-child">
+                    <Link to="/deposits">Depozit seyfləri</Link>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -4,8 +4,14 @@ import DropdownCredits from "./DropdownCredits";
 import DropdownDepozit from "./DropdownDepozit";
 import DropdownMoney from "./DropdowbMoney";
 import DropdownOnline from "./DropdownOnline";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (tab) => {
+    navigate(`/cards?tab=${tab}`);
+  };
   return (
     <div>
       <div className="navbar">
@@ -13,36 +19,52 @@ const Navbar = () => {
           <div className="navmain">
             <ul className="nav-ul">
               <li className="ul-child">
-                <Link to="/cards">Kartlar</Link>
+                <Link to="/cards" className="li-link">
+                  Kartlar
+                </Link>
                 <div className="cards-drown">
                   <div className="container">
                     <div className="cards-down-content">
                       <div className="card-down-left">
                         <div className="card-group-1">
                           <ul className="ul-group">
-                            <li className="card-g-child">Taksit kartlar</li>
-                            <li className="card-g-child">Debet kartlar</li>
-                            <li className="card-g-child">Digital kart</li>
-                            <li className="card-g-child">Hədiyyə kartı</li>
+                            <li className="card-g-child">
+                              <Link to="/cards?tab=Taksit">Taksit</Link>
+                            </li>
+                            <li className="card-g-child">
+                              <Link to="cards?tab=Debet">Debet kartlar</Link>
+                            </li>
+                            <li className="card-g-child">
+                              <Link to="cards?tab=Digital">Digital kart</Link>
+                            </li>
+                            <li className="card-g-child">
+                              <Link to="/cards?tab=Hediye">Hədiyyə kartı</Link>
+                            </li>
                           </ul>
                         </div>
                         <div className="card-group-2">
                           <ul className="ul-group">
                             <li className="card-g-child">
-                              Kartın müddətinin uzadılması
+                              <Link to="/cards">
+                                Kartın müddətinin uzadılması
+                              </Link>
                             </li>
                             <li className="card-g-child">
-                              Kartlar üzrə Xidmətlər
+                              <Link to="/cards">Kartlar üzrə Xidmətlər</Link>
                             </li>
                             <li className="card-g-child">
-                              Təhlükəsizlik qaydaları
+                              <Link to="/cards">Təhlükəsizlik qaydaları</Link>
                             </li>
-                            <li className="card-g-child">3D secure</li>
+                            <li className="card-g-child">
+                              <Link to="/cards">3D secure</Link>
+                            </li>
                           </ul>
                         </div>
                         <div className="card-group-3">
                           <ul className="ul-group">
-                            <li className="card-g-child">Kart sifarişi</li>
+                            <li className="card-g-child">
+                              <Link to="/cards">Kart sifarişi</Link>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -75,38 +97,52 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/credies">Kreditlər</Link>
+                <Link to="/credies" className="li-link">
+                  Kreditlər
+                </Link>
 
                 <div className="li-drop">
                   <DropdownCredits />
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="ipotecs">İpotekalar</Link>
+                <Link to="ipotecs" className="li-link">
+                  İpotekalar
+                </Link>
               </li>
               <li className="ul-child">
-                <Link to="/deposits">Depozitlər</Link>
+                <Link to="/deposits" className="li-link">
+                  Depozitlər
+                </Link>
                 <div className="drop-depozit">
                   <DropdownDepozit />
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/transfer">Pul Köçürmələri</Link>
+                <Link to="/transfer" className="li-link">
+                  Pul Köçürmələri
+                </Link>
                 <div className="drop-money">
                   <DropdownMoney />
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/services">Onlayn Xidmətlər</Link>
+                <Link to="/services" className="li-link">
+                  Onlayn Xidmətlər
+                </Link>
                 <div className="drop-online">
                   <DropdownOnline />
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/campains">Kampaniyalar</Link>
+                <Link to="/campains" className="li-link">
+                  Kampaniyalar
+                </Link>
               </li>
               <li className="ul-child">
-                <Link to="personal-banking">Fərdi Bankçılıq</Link>
+                <Link to="personal-banking" className="li-link">
+                  Fərdi Bankçılıq
+                </Link>
               </li>
             </ul>
             <div className="right-nav">

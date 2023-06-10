@@ -29,7 +29,8 @@
           font-weight: 400;
           font-size: 12px;
           text-transform: uppercase;
-          a {
+          padding-right: 15px;
+          .li-link {
             height: 66px;
             color: #2e3131;
             cursor: pointer;
@@ -74,9 +75,7 @@
               display: block;
             }
           }
-          &:not(:first-child) {
-            margin-left: 15px;
-          }
+
           .cards-drown {
             z-index: 10;
 
@@ -111,13 +110,16 @@
                       padding-bottom: 20px;
                       font-size: 13px;
                       cursor: pointer;
+                      a {
+                        color: #2e3131;
+                        &:hover {
+                          color: #f45369;
+                        }
+                      }
 
                       &:not(:last-child) {
                         font-weight: 600;
                         font-size: 14px;
-                      }
-                      &:hover {
-                        color: #f45369;
                       }
                     }
                   }
@@ -133,8 +135,11 @@
 
                     .card-g-child {
                       padding-bottom: 20px;
-                      &:hover {
-                        color: #f45369;
+                      a {
+                        color: #2e3131;
+                        &:hover {
+                          color: #f45369;
+                        }
                       }
                     }
                   }
@@ -148,8 +153,11 @@
 
                     .card-g-child {
                       padding-bottom: 20px;
-                      &:hover {
-                        color: #f45369;
+                      a {
+                        color: #2e3131;
+                        &:hover {
+                          color: #f45369;
+                        }
                       }
                     }
                   }
