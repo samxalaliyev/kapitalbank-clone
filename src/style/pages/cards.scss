@@ -23,5 +23,97 @@
         font-weight: 300;
       }
     }
+
+    .MuiTabs-indicator {
+      display: none;
+    }
+    .category-item-wrapper-first {
+      border: 1px solid #eaeaea;
+      border-radius: 15px;
+      display: flex;
+      background: #f9fafb;
+      align-items: center;
+      padding: 50px;
+      position: relative;
+      margin-bottom: 35px;
+      .category-item-image {
+        margin-right: 58px;
+        width: 277px;
+        img {
+          max-width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .category-item-details {
+        flex: 1;
+        .item-popular {
+          text-transform: uppercase;
+          color: #ff0023;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 12px;
+          letter-spacing: 0.01em;
+          margin-bottom: 25px;
+          img {
+            margin-bottom: -3px;
+            margin-right: 2px;
+          }
+        }
+        .category-item-title-first {
+          font-size: 34px;
+          font-weight: 600;
+          margin-bottom: 30px;
+          display: block;
+          color: #2e3131;
+        }
+        .first-card-ul {
+          display: flex;
+          margin-bottom: 43px;
+          padding-left: 0;
+          li {
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 12%;
+            span {
+              font-size: 20px;
+              line-height: 35px;
+              color: #2e3131;
+              display: block;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        .category-item-buttons {
+          display: flex;
+          align-items: center;
+          .category-item-button-left {
+            width: 280px;
+            background-color: #f45369;
+            border-radius: 8px;
+            display: inline-block;
+            padding: 11px 20px 14px;
+            font-size: 24px;
+            color: #fff !important;
+            line-height: 30px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s linear;
+          }
+          .category-item-button-right {
+            margin-left: 40px;
+            font-size: 18px;
+            line-height: 23px;
+            color: #2e3131;
+          }
+        }
+      }
+    }
   }
 }
