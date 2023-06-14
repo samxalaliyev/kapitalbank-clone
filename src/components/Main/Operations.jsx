@@ -7,7 +7,7 @@ const Operations = () => {
     <div className="operations">
       <div className="container">
         <div className="operation-ul">
-          <Link className="operation-li">
+          <Link to="/cards?tab=Taksit" className="operation-li">
             <span className="operation-img">
               <img
                 width="50"
@@ -68,7 +68,7 @@ const Operations = () => {
               <strong>İpoteka </strong>sifariş et
             </p>
           </Link>
-          <Link className="operation-li">
+          <Link to="/cards?tab=Debet" className="operation-li">
             <span className="operation-img">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@ const Operations = () => {
               </svg>
             </span>
             <p className="operation-title">
-              <strong>Taksit Kartı</strong>sifariş et
+              <strong>Kampaniyalara </strong>bax
             </p>
           </Link>
         </div>
