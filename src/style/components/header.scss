@@ -1,6 +1,10 @@
 .header {
   width: 100%;
   height: 83px;
+  @media (max-width: 780px) {
+    border-bottom: 2px solid #e8ecf1;
+    height: initial;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;

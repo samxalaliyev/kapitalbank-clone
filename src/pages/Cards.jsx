@@ -41,9 +41,16 @@ const Cards = () => {
             </Typography>
           )}
           {category.items.map((item, index) => (
-            <div key={index}>
+            <div key={index} className="main-class">
               {index === 0 && item.id === 1 ? (
                 <div className="category-item-wrapper-first">
+                  <div className="item-popular-mobile">
+                    <img src={item.items.popular.icon} />
+                    {item.items.popular.text}
+                  </div>
+                  <div className="category-item-title-first-mobile">
+                    {item.title}
+                  </div>
                   <div className="category-item-image">
                     <img src={item.image} alt={item.title} />
                   </div>
@@ -95,7 +102,7 @@ const Cards = () => {
                     <Typography variant="h6" className="category-item-title">
                       {item.title}
                     </Typography>
-                    <ul>
+                    <ul className="details-ul">
                       <li className="detalis-li">{item.items.items1}</li>
                       <li className="detalis-li">{item.items.items3}</li>
                     </ul>
@@ -125,6 +132,13 @@ const Cards = () => {
             <div key={index}>
               {index === 0 ? (
                 <div className="category-item-wrapper-first">
+                  <div className="item-popular-mobile">
+                    <img src={item.items.popular.icon} />
+                    {item.items.popular.text}
+                  </div>
+                  <div className="category-item-title-first-mobile">
+                    {item.title}
+                  </div>
                   <div className="category-item-image">
                     <img src={item.image} alt={item.title} />
                   </div>
@@ -176,7 +190,7 @@ const Cards = () => {
                     <Typography variant="h6" className="category-item-title">
                       {item.title}
                     </Typography>
-                    <ul>
+                    <ul className="details-ul">
                       <li className="detalis-li">{item.items.items1}</li>
                       <li className="detalis-li">{item.items.items3}</li>
                     </ul>
