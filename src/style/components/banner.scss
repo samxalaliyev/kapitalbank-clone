@@ -7,6 +7,10 @@
     width: 100%;
     height: 500px;
   }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 100%;
+    height: 500px;
+  }
 
   .banner-main {
     width: 1520px;
@@ -14,6 +18,10 @@
     @media (min-width: 320px) and (max-width: 480px) {
       width: 100%;
       height: 100%;
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      width: 100%;
+      height: 500px;
     }
     &:hover img {
       transform: scale(1.1);
@@ -24,11 +32,17 @@
       @media (min-width: 320px) and (max-width: 480px) {
         width: 100%;
       }
+      @media (min-width: 481px) and (max-width: 768px) {
+        width: 100%;
+      }
       .banner-content {
         width: 100%;
         height: 100%;
         display: flex;
         @media (min-width: 320px) and (max-width: 480px) {
+          flex-direction: column-reverse;
+        }
+        @media (min-width: 481px) and (max-width: 768px) {
           flex-direction: column-reverse;
         }
         .left-content {
@@ -39,9 +53,20 @@
           @media (min-width: 320px) and (max-width: 480px) {
             all: initial;
           }
+          @media (min-width: 481px) and (max-width: 768px) {
+            width: 100%;
+            height: 50%;
+            margin: initial;
+            padding: 8px 0 0 0;
+          }
           .left-items {
             @media (min-width: 320px) and (max-width: 480px) {
               padding: 30px;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
             }
             .banner-text {
               width: 578px;
@@ -51,6 +76,11 @@
               justify-content: center;
               @media (min-width: 320px) and (max-width: 480px) {
                 width: 100%;
+                text-align: center;
+              }
+              @media (min-width: 481px) and (max-width: 768px) {
+                align-items: center;
+                text-align: center;
               }
 
               p {
@@ -83,6 +113,10 @@
               display: flex;
               justify-content: flex-start;
               padding: 30px 0;
+              @media (min-width: 481px) and (max-width: 768px) {
+                padding: initial;
+                justify-content: center;
+              }
               .btn {
                 width: 280px;
                 background-color: #f45369;
@@ -117,6 +151,13 @@
               position: relative;
               left: 0;
             }
+            @media (min-width: 481px) and (max-width: 768px) {
+              justify-content: space-between;
+              width: 100%;
+              position: relative;
+              left: 0;
+              bottom: 172px;
+            }
 
             .next-button,
             .prev-button {
@@ -144,6 +185,12 @@
             height: 50%;
             background-color: #fff;
           }
+          @media (min-width: 481px) and (max-width: 768px) {
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+            padding: initial;
+          }
           .banner-img {
             width: 578px;
             height: 289px;
@@ -151,6 +198,10 @@
             align-items: center;
             justify-content: center;
             @media (min-width: 320px) and (max-width: 480px) {
+              width: 100%;
+              height: 100%;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
               width: 100%;
               height: 100%;
             }
@@ -163,12 +214,25 @@
                 align-items: center;
                 justify-content: center;
               }
+              @media (min-width: 481px) and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .ipotek-img {
+                  width: 40%;
+                }
+              }
               img {
                 width: 100%;
                 height: 289px;
                 transition: ease-in-out 0.5s;
                 @media (min-width: 320px) and (max-width: 480px) {
                   all: initial;
+                  width: 63%;
+                  object-position: bottom;
+                }
+                @media (min-width: 481px) and (max-width: 768px) {
+                  height: 100%;
                   width: 63%;
                   object-position: bottom;
                 }
@@ -186,5 +250,18 @@
     all: initial;
     width: 40% !important;
     object-position: bottom;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .prev-button {
+    position: absolute;
+    top: 140px;
+    right: 1260px;
+  }
+  .next-button {
+    position: absolute;
+    top: 140px;
+    left: -1260px;
   }
 }

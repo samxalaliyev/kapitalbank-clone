@@ -312,7 +312,7 @@
           align-items: center;
           margin-top: auto;
           border-top: 1px solid #e8ecf1;
-          @media (max-width: 767px) {
+          @media (max-width: 780px) {
             flex-direction: column;
             border-top: none;
           }
@@ -322,14 +322,14 @@
             padding: 14px 24px;
             color: rgba(46, 49, 49, 0.8);
             transition: 0.3s linear;
-            @media (max-width: 767px) {
+            @media (max-width: 780px) {
               width: 100%;
             }
             &:first-child {
               border-right: 1px solid #e8ecf1;
               color: #f45369;
               font-weight: 600;
-              @media (max-width: 767px) {
+              @media (max-width: 780px) {
                 background-color: #f45369;
                 border-radius: 8px;
                 display: inline-block;
