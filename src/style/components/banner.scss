@@ -152,11 +152,10 @@
               left: 0;
             }
             @media (min-width: 481px) and (max-width: 768px) {
-              justify-content: space-between;
               width: 100%;
+              justify-content: space-between;
               position: relative;
-              left: 0;
-              bottom: 172px;
+              top: -173px;
             }
 
             .next-button,

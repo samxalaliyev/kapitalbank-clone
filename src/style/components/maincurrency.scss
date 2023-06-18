@@ -13,14 +13,14 @@
     .main-content {
       display: flex;
       justify-content: space-between;
-      @media (min-width: 320px) and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 768px) {
         flex-wrap: wrap;
       }
       .main-left {
         width: 100%;
         flex: 0 0 58.3333333333%;
         max-width: 58.3333333333%;
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 768px) {
           display: none;
         }
         .left-text {

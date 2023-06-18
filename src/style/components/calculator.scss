@@ -5,13 +5,13 @@
   background-color: #fff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     height: 100%;
   }
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 320px) and (max-width: 768px) {
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
@@ -22,7 +22,7 @@
       line-height: 45px;
       font-weight: 400;
       margin-bottom: 14px;
-      @media (min-width: 320px) and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 768px) {
         font-weight: 600;
       }
     }
@@ -32,8 +32,8 @@
       padding-top: 30px;
       flex-wrap: wrap;
       .calculator-left {
-        @media (min-width: 320px) and (max-width: 480px) {
-          max-width: 100%;
+        @media (min-width: 320px) and (max-width: 768px) {
+          width: 100%;
         }
         h3 {
           font-size: 24px !important;
@@ -45,7 +45,7 @@
           font-weight: 400 !important;
 
           margin-bottom: 20px;
-          @media (min-width: 320px) and (max-width: 480px) {
+          @media (min-width: 320px) and (max-width: 768px) {
             font-size: 16px;
           }
         }
@@ -55,7 +55,7 @@
           flex-direction: column;
           justify-content: space-between;
           height: 250px;
-          @media (min-width: 320px) and (max-width: 480px) {
+          @media (min-width: 320px) and (max-width: 768px) {
             max-width: 100%;
           }
           .range-values {
@@ -64,7 +64,7 @@
             margin: 15px 0;
             justify-content: space-between;
             font-size: 14px;
-            @media (min-width: 320px) and (max-width: 480px) {
+            @media (min-width: 320px) and (max-width: 768px) {
               width: 100%;
               font-size: 12px;
               opacity: 0.8;
@@ -78,7 +78,7 @@
             border: 1px solid rgb(128, 128, 128, 0.5);
             border-bottom: 0;
             border-radius: 8px;
-            @media (min-width: 320px) and (max-width: 480px) {
+            @media (min-width: 320px) and (max-width: 768px) {
               width: 100%;
             }
             label {
@@ -95,7 +95,7 @@
               }
               .inner-amount {
                 font-size: 18px;
-                @media (min-width: 320px) and (max-width: 480px) {
+                @media (min-width: 320px) and (max-width: 768px) {
                   font-size: 16px;
                   font-weight: 600;
                 }
@@ -123,7 +123,7 @@
       }
     }
     .calculator-right {
-      @media (min-width: 320px) and (max-width: 480px) {
+      @media (min-width: 320px) and (max-width: 768px) {
         width: 100%;
       }
 
@@ -136,7 +136,7 @@
         min-height: 329px;
         display: flex;
         flex-direction: column;
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 768px) {
           margin-left: 0;
           margin-top: 90px;
           padding: 24px 15px;
@@ -153,7 +153,7 @@
         }
         .month-payment-bottom {
           margin-bottom: 51px;
-          @media (min-width: 320px) and (max-width: 480px) {
+          @media (min-width: 320px) and (max-width: 768px) {
             margin-bottom: 24px;
           }
           span {
@@ -181,7 +181,7 @@
         border: none;
         cursor: pointer;
         transition: 0.3s linear;
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (min-width: 320px) and (max-width: 768px) {
           width: 100%;
         }
       }

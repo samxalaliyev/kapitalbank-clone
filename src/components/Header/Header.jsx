@@ -181,22 +181,20 @@ const Header = () => {
                   {activeItem === "item1" && (
                     <ul className="child-ul">
                       <li>
-                        <Link to="/">Bütün kartlar</Link>
+                        <Link to="/cards?tab=all">Bütün kartlar</Link>
                       </li>
                       <li>
-                        <Link to="/">Taksit kartlar</Link>
+                        <Link to="/cards?tab=Taksit">Taksit kartlar</Link>
                       </li>
                       <li>
-                        <Link to="/">Debet kartlar</Link>
+                        <Link to="/cards?tab=Debet">Debet kartlar</Link>
                       </li>
                       <li>
-                        <Link to="/">Digital kart</Link>
+                        <Link to="/cards?tab=Digital">Digital kart</Link>
                       </li>
+
                       <li>
-                        <Link to="/">Taksit</Link>
-                      </li>
-                      <li>
-                        <Link to="/">Hədiyyə kartı</Link>
+                        <Link to="/cards?tab=Hediye">Hədiyyə kartı</Link>
                       </li>
                       <li>
                         <Link to="/">Kartın müddətinin uzadılması</Link>
