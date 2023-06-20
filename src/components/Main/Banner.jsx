@@ -33,7 +33,7 @@ const Banner = () => {
                       </p>
                     </div>
                     <div className="banner-button">
-                      <Link to="/" className="btn">
+                      <Link to="/cash" className="btn">
                         Sifariş et
                       </Link>
                     </div>
@@ -77,7 +77,7 @@ const Banner = () => {
                       </p>
                     </div>
                     <div className="banner-button">
-                      <Link to="/" className="btn">
+                      <Link to="/cash" className="btn">
                         Sifariş et
                       </Link>
                     </div>
@@ -122,7 +122,7 @@ const Banner = () => {
                       </p>
                     </div>
                     <div className="banner-button">
-                      <Link to="/" className="btn">
+                      <Link to="/cash" className="btn">
                         Daha ətraflı
                       </Link>
                     </div>

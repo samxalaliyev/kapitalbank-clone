@@ -103,7 +103,7 @@ const FooterUp = () => {
               />
               <ul className="mobile">
                 <li>
-                  <Link>
+                  <Link to="https://play.google.com/store/apps/details?id=az.kapitalbank.mbanking&pli=1">
                     <img
                       src="https://www.kapitalbank.az/assets/static/img/play-store.svg"
                       alt=""
@@ -114,7 +114,7 @@ const FooterUp = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link>
+                  <Link to="https://apps.apple.com/us/app/birbank/id1293207342">
                     <img
                       src="https://www.kapitalbank.az/assets/static/img/app-store.svg"
                       alt=""
@@ -125,7 +125,7 @@ const FooterUp = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link>
+                  <Link to="https://appgallery.huawei.com/#/app/C102156391">
                     <img
                       src="https://www.kapitalbank.az/assets/static/img/app-gallery.svg"
                       alt=""

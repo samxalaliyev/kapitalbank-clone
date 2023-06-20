@@ -64,7 +64,7 @@ const Header = () => {
             </ul>
             <ul className="mobile-ul">
               <li className="birbank-icon">
-                <Link>
+                <Link to="https://birbank.az/">
                   <img
                     alt="BirBank"
                     src="https://www.kapitalbank.az/assets/static/img/birbanklogo-mobile.svg"
@@ -181,35 +181,55 @@ const Header = () => {
                   {activeItem === "item1" && (
                     <ul className="child-ul">
                       <li>
-                        <Link to="/cards?tab=all">Bütün kartlar</Link>
+                        <Link to="/cards?tab=all" onClick={toggleMenu}>
+                          Bütün kartlar
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/cards?tab=Taksit">Taksit kartlar</Link>
+                        <Link to="/cards?tab=Taksit" onClick={toggleMenu}>
+                          Taksit kartlar
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/cards?tab=Debet">Debet kartlar</Link>
+                        <Link to="/cards?tab=Debet" onClick={toggleMenu}>
+                          Debet kartlar
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/cards?tab=Digital">Digital kart</Link>
+                        <Link to="/cards?tab=Digital" onClick={toggleMenu}>
+                          Digital kart
+                        </Link>
                       </li>
 
                       <li>
-                        <Link to="/cards?tab=Hediye">Hədiyyə kartı</Link>
+                        <Link to="/cards?tab=Hediye" onClick={toggleMenu}>
+                          Hədiyyə kartı
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kartın müddətinin uzadılması</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kartın müddətinin uzadılması
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kartlar üzrə xidmətlər</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kartlar üzrə xidmətlər
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Təhlükəsizlik qaydaları</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Təhlükəsizlik qaydaları
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">3D secure</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          3D secure
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kart sifarişi</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kart sifarişi
+                        </Link>
                       </li>
                       <div className="card-img">
                         <div className="card-content">
@@ -253,30 +273,44 @@ const Header = () => {
                   {activeItem === "item2" && (
                     <ul className="child-ul">
                       <li style={{ color: "#ef3e42" }}>
-                        <Link to="/">
+                        <Link to="/" onClick={toggleMenu}>
                           Çoxdan gözlənilən nağd kredit endirimi!
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">Bütün kreditlər</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Bütün kreditlər
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Nağd pul kediti</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Nağd pul kediti
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Mikro Biznes Keditləri</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Mikro Biznes Keditləri
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Təminatlı manat krediti</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Təminatlı manat krediti
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Əmanət təminatlı kredit</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Əmanət təminatlı kredit
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Avtomobil krediti</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Avtomobil krediti
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Daşınmaz əmlak təminatlı kredit</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Daşınmaz əmlak təminatlı kredit
+                        </Link>
                       </li>
                       <div className="card-img">
                         <div className="card-content">
@@ -302,7 +336,9 @@ const Header = () => {
                 {/* mobile menu */}
 
                 <p className="no-childs">
-                  <Link to="/">İPOTEKALAR</Link>
+                  <Link to="/" onClick={toggleMenu}>
+                    İPOTEKALAR
+                  </Link>
                 </p>
 
                 {/* mobile menu */}
@@ -324,16 +360,24 @@ const Header = () => {
                   {activeItem === "item3" && (
                     <ul className="child-ul">
                       <li>
-                        <Link to="/deposits">Bütün depozitlər</Link>
+                        <Link to="/deposits" onClick={toggleMenu}>
+                          Bütün depozitlər
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/deposits">Kapital depoziti</Link>
+                        <Link to="/deposits" onClick={toggleMenu}>
+                          Kapital depoziti
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/deposits">Müddətsiz depozit</Link>
+                        <Link to="/deposits" onClick={toggleMenu}>
+                          Müddətsiz depozit
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/deposits">Depozit seyfləri</Link>
+                        <Link to="/deposits" onClick={toggleMenu}>
+                          Depozit seyfləri
+                        </Link>
                       </li>
                       <div className="card-img">
                         <div className="card-content">
@@ -375,21 +419,29 @@ const Header = () => {
                   {activeItem === "item4" && (
                     <ul className="child-ul">
                       <li>
-                        <Link to="/">
+                        <Link to="/" onClick={toggleMenu}>
                           Birbank ilə istənilən karta pul köçürün!
                         </Link>
                       </li>
                       <li>
-                        <Link to="/">Bütün pul köçürmələri</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Bütün pul köçürmələri
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Xəzri</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Xəzri
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Zolotoya Korona</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Zolotoya Korona
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Western Union</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Western Union
+                        </Link>
                       </li>
                       <div className="card-img">
                         <div className="card-content">
@@ -432,25 +484,39 @@ const Header = () => {
                   {activeItem === "item5" && (
                     <ul className="child-ul">
                       <li>
-                        <Link to="/">Bütün online xidmətlər</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Bütün online xidmətlər
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kart siafrişi</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kart siafrişi
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kredit sifarişi</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kredit sifarişi
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kredit ödənişi</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kredit ödənişi
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Kommunal ödənişləri</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Kommunal ödənişləri
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/">Onlayn növbə</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Onlayn növbə
+                        </Link>
                       </li>
                       <li>
-                        <Link>Arayış və çıxarışların alınması</Link>
+                        <Link to="/" onClick={toggleMenu}>
+                          Arayış və çıxarışların alınması
+                        </Link>
                       </li>
                       <div className="card-img">
                         <div className="card-content">
@@ -476,10 +542,14 @@ const Header = () => {
                 </li>
                 {/* mobile menu */}
                 <p className="no-childs">
-                  <Link to="/">KAMPANİYALAR</Link>
+                  <Link to="/" onClick={toggleMenu}>
+                    KAMPANİYALAR
+                  </Link>
                 </p>
                 <p className="no-childs">
-                  <Link to="/">FƏRDİ BANKÇILIQ</Link>
+                  <Link to="/" onClick={toggleMenu}>
+                    FƏRDİ BANKÇILIQ
+                  </Link>
                 </p>
               </ul>
               <hr />

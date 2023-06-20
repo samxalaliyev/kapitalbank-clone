@@ -12,6 +12,7 @@ import Campains from "./pages/Campains";
 import PersonalBank from "./pages/PersonalBank";
 import FooterUp from "./components/Footer/FooterUp";
 import FooterBottom from "./components/Footer/FooterBottom";
+import CashMoney from "./pages/CashMoney";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/campains" element={<Campains />} />
         <Route path="/personal-banking" element={<PersonalBank />} />
-        <Route />
+        <Route path="/cash" element={<CashMoney />} />
         <Route />
       </Routes>
       <FooterUp />

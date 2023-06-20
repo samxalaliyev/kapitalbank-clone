@@ -23,27 +23,27 @@ const FooterBottom = () => {
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://www.facebook.com/kapitalbank">
                   <FaFacebook />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://www.linkedin.com/company/kapital-bank-ojsc/">
                   <FaLinkedin />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://twitter.com/KapitalBankOJSC">
                   <FaTwitter />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://www.instagram.com/kapital_bank/">
                   <FaInstagram />
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="https://www.youtube.com/channel/UCarG-YHqZPd42HPEBqSSmmw">
                   <FaYoutube />
                 </Link>
               </li>

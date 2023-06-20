@@ -146,7 +146,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="right-nav">
-              <Link to="/">
+              <Link to="https://birbank.az/">
                 <div className="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
