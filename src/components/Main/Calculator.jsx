@@ -126,7 +126,7 @@ const Calculator = () => {
                   <span>{monthlyPayment}</span>
                   <span>₼</span>
                 </p>
-                <Link to="/" className="btn">
+                <Link to="/cash" className="btn">
                   Sifariş et
                 </Link>
               </div>

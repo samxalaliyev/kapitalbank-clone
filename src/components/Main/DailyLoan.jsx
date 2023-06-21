@@ -40,7 +40,7 @@ const DailyLoan = () => {
                   </li>
                 </ul>
                 <div className="loan-button">
-                  <Link to="/" className="btn">
+                  <Link to="/cash" className="btn">
                     Sifariş et
                   </Link>
                 </div>

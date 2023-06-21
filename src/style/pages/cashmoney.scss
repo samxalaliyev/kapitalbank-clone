@@ -78,6 +78,9 @@
               p {
                 font-size: 16px;
                 line-height: 24px;
+                @media (min-width: 320px) and (max-width: 768px) {
+                  font-size: 15px;
+                }
               }
               .chlid-bold {
                 color: #25282b;
@@ -101,7 +104,24 @@
       justify-content: center;
       flex-direction: column;
       padding: 35px 0 40px 0;
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+        span {
+          color: $main;
+        }
+        @media (min-width: 320px) and (max-width: 768px) {
+          width: 80%;
+        }
+      }
       .input-butons {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width: 320px) and (max-width: 480px) {
+          width: 90%;
+        }
         .input-option {
           width: 100%;
           background-color: #fff;
@@ -133,6 +153,9 @@
             font-weight: 500;
             margin-left: -6px;
             outline: none;
+            @media (min-width: 320px) and (max-width: 768px) {
+              width: 67%;
+            }
             &::-webkit-inner-spin-button,
             ::-webkit-outer-spin-button {
               -webkit-appearance: none;
@@ -171,6 +194,86 @@
           opacity: 0.5;
         }
       }
+    }
+  }
+  .cash-bottom {
+    .bottom-title {
+      padding: 64px 0 30px 165px;
+      @media (min-width: 320px) and (max-width: 768px) {
+        padding-left: 16px;
+      }
+      span {
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 700;
+      }
+    }
+    .bottom-text {
+      background-color: $secondary;
+      padding: 30px 165px 30px 183px;
+      @media (min-width: 320px) and (max-width: 768px) {
+        padding: 30px 3px 30px 30px;
+      }
+      .bottom-content {
+        margin-right: -12px;
+        margin-left: -12px;
+        display: flex;
+        @media (min-width: 320px) and (max-width: 768px) {
+          flex-wrap: wrap;
+        }
+        .left-items {
+          width: 50%;
+          padding-right: 12px;
+          padding-left: 12px;
+          @media (min-width: 320px) and (max-width: 768px) {
+            width: 100%;
+          }
+          ul {
+            li {
+              margin-bottom: 20px;
+              text-align: justify;
+              list-style-type: disc;
+              margin-right: 50px;
+              @media (min-width: 320px) and (max-width: 768px) {
+                font-size: 14px;
+              }
+
+              &::marker {
+                color: $main;
+              }
+            }
+          }
+        }
+        .right-items {
+          width: 50%;
+          padding-right: 12px;
+          padding-left: 12px;
+          @media (min-width: 320px) and (max-width: 768px) {
+            width: 100%;
+          }
+          ul {
+            li {
+              margin-bottom: 20px;
+              text-align: justify;
+              list-style-type: disc;
+              margin-right: 50px;
+              @media (min-width: 320px) and (max-width: 768px) {
+                font-size: 14px;
+              }
+              &::marker {
+                color: $main;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-info {
+      color: #25282b;
+      font-size: 16px;
+      line-height: 20px;
+      background-color: #e8ecf1;
+      padding: 20px;
     }
   }
 }

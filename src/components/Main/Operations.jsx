@@ -18,7 +18,7 @@ const Operations = () => {
               <strong>Taksit Kartı </strong>sifariş et
             </p>
           </Link>
-          <Link className="operation-li">
+          <Link to="/cash" className="operation-li">
             <span className="operation-img">
               <svg
                 version="1.0"
@@ -60,7 +60,7 @@ const Operations = () => {
               <strong>Kredit </strong>sifariş et
             </p>
           </Link>
-          <Link className="operation-li">
+          <Link to="/cash" className="operation-li">
             <span className="operation-img">
               <IoHome color="#F0556A" className="icon" />
             </span>
@@ -87,7 +87,7 @@ const Operations = () => {
               <strong>Debet Kart </strong>sifariş et
             </p>
           </Link>
-          <Link className="operation-li">
+          <Link to="/cash" className="operation-li">
             <span className="operation-img">
               <svg
                 version="1.0"

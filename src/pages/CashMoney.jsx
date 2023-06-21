@@ -115,7 +115,42 @@ const CashMoney = () => {
             </div>
           </div>
         </div>
-        <div className="cash-bottom"></div>
+        <div className="cash-bottom">
+          <div className="bottom-title">
+            <span>Şərtlər</span>
+          </div>
+          <div className="bottom-text">
+            <div className="bottom-content">
+              <div className="left-items">
+                <ul>
+                  <li>
+                    Krediti Kapital Bank və ya digər bankdan əmək haqqı/təqaüd
+                    alan şəxslər əldə edə bilər
+                  </li>
+                  <li>Yaş həddi: 18-70</li>
+                  <li>
+                    Son iş yerində staj minimum 3 ay olmalıdır. Ümumi staj
+                    minimum 6 ay olmalıdır. Təqaüdçü müştərilər üzrə staj tələbi
+                    mövcud deyil
+                  </li>
+                </ul>
+              </div>
+              <div className="right-items">
+                <ul>
+                  <li>Xüsusi hallarda zamin tələb edilə bilər</li>
+                  <li>
+                    Digər banklarda krediti olanlara da kredit verilə bilər
+                  </li>
+                  <li>Rəsmi gəliri olan şəxslər</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="bottom-info">
+            * Kapital Bank ASC 05 noyabr 2018-ci il tarixli 244 nömrəli Bank
+            Lisenziyası əsasında fəaliyyət göstərir.
+          </div>
+        </div>
       </div>
     </div>
   );
