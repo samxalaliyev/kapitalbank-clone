@@ -7,7 +7,7 @@ const data = [
         title: "Birbank Cashback debet",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-cashback-debet-black1662035368.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -30,7 +30,7 @@ const data = [
         title: "Birbank Umico Premium debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico-premium-debet1657009422.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -53,7 +53,7 @@ const data = [
         title: "Birbank Miles debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-miles-debet1657009433.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -76,7 +76,7 @@ const data = [
         title: "Birbank Umico debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico-debet1657194801.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -99,7 +99,7 @@ const data = [
         title: "Mastercard Platinum debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/mastercard-platinum1594371040.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -122,7 +122,7 @@ const data = [
         title: "Visa Infinite Miles debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/visa-infinite1670322066.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -145,7 +145,7 @@ const data = [
         title: "Mastercard World Elite Miles debet ",
         image:
           "https://www.kapitalbank.az/images/cards/M/mastercard-worldelite1657282639.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -173,7 +173,7 @@ const data = [
         title: "Birbank Cashback taksit",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-cashback1662035458.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -196,7 +196,7 @@ const data = [
         title: "Birbank Umico taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico1657178147.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -219,7 +219,7 @@ const data = [
         title: "Birbank Miles taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-miles1657178213.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -242,7 +242,7 @@ const data = [
         title: "Birbank Umico Premium taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico-premium1657178222.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -270,7 +270,7 @@ const data = [
         title: "Birbank Digital Card",
         image:
           "https://www.kapitalbank.az/images/cards/M/prepaid1619522566.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",
@@ -298,7 +298,7 @@ const data = [
         title: "Hədiyyə kartı",
         image:
           "https://www.kapitalbank.az/images/cards/M/gift-card1592389969.png",
-        items: {
+        subItems: {
           popular: {
             icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
             text: "POPULYAR",

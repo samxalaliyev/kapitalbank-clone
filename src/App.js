@@ -13,6 +13,7 @@ import PersonalBank from "./pages/PersonalBank";
 import FooterUp from "./components/Footer/FooterUp";
 import FooterBottom from "./components/Footer/FooterBottom";
 import CashMoney from "./pages/CashMoney";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<Cards />} />
+        <Route path="/product-details/:id" element={<Products />} />
         <Route path="/credies" element={<Credies />} />
         <Route path="/ipotecs" element={<Ipotecs />} />
         <Route path="/deposits" element={<Deposits />} />

@@ -10,7 +10,14 @@
     @media (min-width: 320px) and (max-width: 480px) {
       width: 100%;
     }
-
+    // .main-class {
+    //   display: flex;
+    //   div {
+    //     &:first-child {
+    //       display: block;
+    //     }
+    //   }
+    // }
     .cards-head {
       margin-top: 20px;
       margin-bottom: 34px;

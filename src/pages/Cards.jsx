@@ -32,7 +32,7 @@ const Cards = () => {
   const renderCardsForCategory = () => {
     if (activeCategory === "all") {
       return data.map((category, index) => (
-        <div key={index}>
+        <div key={index} className="main-class">
           {index == 0 ? (
             ""
           ) : (
@@ -41,12 +41,12 @@ const Cards = () => {
             </Typography>
           )}
           {category.items.map((item, index) => (
-            <div key={index} className="main-class">
+            <div key={index}>
               {index === 0 && item.id === 1 ? (
                 <div className="category-item-wrapper-first">
                   <div className="item-popular-mobile">
-                    <img src={item.items.popular.icon} />
-                    {item.items.popular.text}
+                    <img src={item.subItems.popular.icon} />
+                    {item.subItems.popular.text}
                   </div>
                   <div className="category-item-title-first-mobile">
                     {item.title}
@@ -56,34 +56,40 @@ const Cards = () => {
                   </div>
                   <div className="category-item-details">
                     <div className="item-popular">
-                      <img src={item.items.popular.icon} />
-                      {item.items.popular.text}
+                      <img src={item.subItems.popular.icon} />
+                      {item.subItems.popular.text}
                     </div>
                     <div className="category-item-title-first">
                       {item.title}
                     </div>
                     <ul className="first-card-ul">
                       <li>
-                        <span>{item.items.items1}</span>
-                        {item.items.items2}
+                        <span>{item.subItems.items1}</span>
+                        {item.subItems.items2}
                       </li>
 
                       <li>
-                        <span>{item.items.items3}</span>
-                        {item.items.items4}
+                        <span>{item.subItems.items3}</span>
+                        {item.subItems.items4}
                       </li>
 
                       <li>
-                        <span>{item.items.items5}</span>
-                        {item.items.items6}
+                        <span>{item.subItems.items5}</span>
+                        {item.subItems.items6}
                       </li>
                     </ul>
 
                     <div className="category-item-buttons">
-                      <Link className="category-item-button-left">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button-left"
+                      >
                         {item.buttons.button1}
                       </Link>
-                      <Link className="category-item-button-right">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button-right"
+                      >
                         {item.buttons.button2}
                       </Link>
                     </div>
@@ -103,15 +109,21 @@ const Cards = () => {
                       {item.title}
                     </Typography>
                     <ul className="details-ul">
-                      <li className="detalis-li">{item.items.items1}</li>
-                      <li className="detalis-li">{item.items.items3}</li>
+                      <li className="detalis-li">{item.subItems.items1}</li>
+                      <li className="detalis-li">{item.subItems.items3}</li>
                     </ul>
 
                     <div className="category-item-buttons">
-                      <Link className="category-item-button">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button"
+                      >
                         {item.buttons.button1}
                       </Link>
-                      <Link className="category-item-button">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button"
+                      >
                         {item.buttons.button2}
                       </Link>
                     </div>
@@ -127,14 +139,14 @@ const Cards = () => {
         (item) => item.category === activeCategory
       );
       return (
-        <div>
+        <div className="main-class">
           {categoryData.items.map((item, index) => (
             <div key={index}>
               {index === 0 ? (
                 <div className="category-item-wrapper-first">
                   <div className="item-popular-mobile">
-                    <img src={item.items.popular.icon} />
-                    {item.items.popular.text}
+                    <img src={item.subItems.popular.icon} />
+                    {item.subItems.popular.text}
                   </div>
                   <div className="category-item-title-first-mobile">
                     {item.title}
@@ -144,34 +156,40 @@ const Cards = () => {
                   </div>
                   <div className="category-item-details">
                     <div className="item-popular">
-                      <img src={item.items.popular.icon} />
-                      {item.items.popular.text}
+                      <img src={item.subItems.popular.icon} />
+                      {item.subItems.popular.text}
                     </div>
                     <div className="category-item-title-first">
                       {item.title}
                     </div>
                     <ul className="first-card-ul">
                       <li>
-                        <span>{item.items.items1}</span>
-                        {item.items.items2}
+                        <span>{item.subItems.items1}</span>
+                        {item.subItems.items2}
                       </li>
 
                       <li>
-                        <span>{item.items.items3}</span>
-                        {item.items.items4}
+                        <span>{item.subItems.items3}</span>
+                        {item.subItems.items4}
                       </li>
 
                       <li>
-                        <span>{item.items.items5}</span>
-                        {item.items.items6}
+                        <span>{item.subItems.items5}</span>
+                        {item.subItems.items6}
                       </li>
                     </ul>
 
                     <div className="category-item-buttons">
-                      <Link className="category-item-button-left">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button-left"
+                      >
                         {item.buttons.button1}
                       </Link>
-                      <Link className="category-item-button-right">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button-right"
+                      >
                         {item.buttons.button2}
                       </Link>
                     </div>
@@ -191,14 +209,20 @@ const Cards = () => {
                       {item.title}
                     </Typography>
                     <ul className="details-ul">
-                      <li className="detalis-li">{item.items.items1}</li>
-                      <li className="detalis-li">{item.items.items3}</li>
+                      <li className="detalis-li">{item.subItems.items1}</li>
+                      <li className="detalis-li">{item.subItems.items3}</li>
                     </ul>
                     <div className="category-item-buttons">
-                      <Link className="category-item-button">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button"
+                      >
                         {item.buttons.button1}
                       </Link>
-                      <Link className="category-item-button">
+                      <Link
+                        to={`/product-details/${item.id}`}
+                        className="category-item-button"
+                      >
                         {item.buttons.button2}
                       </Link>
                     </div>
