@@ -94,82 +94,13 @@ const data = [
           button2: "Daha ətraflı",
         },
       },
-      {
-        id: 5,
-        title: "Mastercard Platinum debet ",
-        image:
-          "https://www.kapitalbank.az/images/cards/M/mastercard-platinum1594371040.png",
-        subItems: {
-          popular: {
-            icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-            text: "POPULYAR",
-            title2: "Mastercard Platinum debet",
-          },
-          items1: "Rahat və təhlükəsiz",
-          items2: "Kartın qiyməti",
-          items3: "3 illik xidmət haqqı",
-          items4: "Bonuslar",
-          items5: "Pulsuz",
-          items6: "Nağdlaşdırma və köçürmə",
-        },
-        buttons: {
-          button1: "Sifariş et",
-          button2: "Daha ətraflı",
-        },
-      },
-      {
-        id: 6,
-        title: "Visa Infinite Miles debet ",
-        image:
-          "https://www.kapitalbank.az/images/cards/M/visa-infinite1670322066.png",
-        subItems: {
-          popular: {
-            icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-            text: "POPULYAR",
-            title2: "Visa Infinite Miles debet",
-          },
-          items1: "VIP",
-          items2: "Kartın qiyməti",
-          items3: "Fərdi Bankçılıq paketi üzrə",
-          items4: "Bonuslar",
-          items5: "Pulsuz",
-          items6: "Nağdlaşdırma və köçürmə",
-        },
-        buttons: {
-          button1: "Sifariş et",
-          button2: "Daha ətraflı",
-        },
-      },
-      {
-        id: 7,
-        title: "Mastercard World Elite Miles debet ",
-        image:
-          "https://www.kapitalbank.az/images/cards/M/mastercard-worldelite1657282639.png",
-        subItems: {
-          popular: {
-            icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-            text: "POPULYAR",
-            title2: "Mastercard World Elite Miles debet",
-          },
-          items1: "ELİT",
-          items2: "Kartın qiyməti",
-          items3: "Fərdi Bankçılıq paketi üzrə",
-          items4: "Bonuslar",
-          items5: "Pulsuz",
-          items6: "Nağdlaşdırma və köçürmə",
-        },
-        buttons: {
-          button1: "Sifariş et",
-          button2: "Daha ətraflı",
-        },
-      },
     ],
   },
   {
     category: "Taksit",
     items: [
       {
-        id: 8,
+        id: 5,
         title: "Birbank Cashback taksit",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-cashback1662035458.png",
@@ -192,7 +123,7 @@ const data = [
         },
       },
       {
-        id: 9,
+        id: 6,
         title: "Birbank Umico taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico1657178147.png",
@@ -215,7 +146,7 @@ const data = [
         },
       },
       {
-        id: 10,
+        id: 7,
         title: "Birbank Miles taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-miles1657178213.png",
@@ -238,7 +169,7 @@ const data = [
         },
       },
       {
-        id: 11,
+        id: 8,
         title: "Birbank Umico Premium taksit ",
         image:
           "https://www.kapitalbank.az/images/cards/M/birbank-umico-premium1657178222.png",
@@ -266,7 +197,7 @@ const data = [
     category: "Digital",
     items: [
       {
-        id: 12,
+        id: 9,
         title: "Birbank Digital Card",
         image:
           "https://www.kapitalbank.az/images/cards/M/prepaid1619522566.png",
@@ -294,7 +225,7 @@ const data = [
     category: "Hediye",
     items: [
       {
-        id: 13,
+        id: 10,
         title: "Hədiyyə kartı",
         image:
           "https://www.kapitalbank.az/images/cards/M/gift-card1592389969.png",

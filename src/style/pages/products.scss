@@ -11,11 +11,14 @@
       flex-direction: row-reverse;
       position: relative;
       background-color: #fff;
-      @media (min-width: 320px) and (max-width: 768px) {
+      @media (min-width: 320px) and (max-width: 576px) {
         display: flex;
         flex-direction: column;
         background-color: #f9f9fa;
         margin-top: 125px;
+        padding: 10px;
+      }
+      @media (min-width: 576px) and (max-width: 768px) {
         padding: 10px;
       }
 
@@ -24,9 +27,11 @@
         display: flex;
         align-items: center;
         margin-right: 80px;
-        @media (min-width: 320px) and (max-width: 768px) {
+        @media (min-width: 320px) and (max-width: 576px) {
           position: relative;
           top: -100px;
+          margin-right: 0;
+          justify-content: center;
         }
         .cash-img {
           border-radius: 10px;
@@ -47,7 +52,7 @@
       .content-info {
         padding: 48px 0;
         width: 100%;
-        @media (min-width: 320px) and (max-width: 768px) {
+        @media (min-width: 320px) and (max-width: 576px) {
           margin-top: -90px;
           padding: 16px 8px !important;
         }

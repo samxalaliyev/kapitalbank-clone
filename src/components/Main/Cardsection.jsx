@@ -46,7 +46,7 @@ const Cardsection = () => {
                       <span>63 günədək</span>Güzəşt müddəti
                     </li>
                   </ul>
-                  <Link to="/" className="btn">
+                  <Link to="/product-details/5" className="btn">
                     Sifariş et
                   </Link>
 
@@ -92,7 +92,7 @@ const Cardsection = () => {
                       <span>63 günədək</span>Güzəşt müddəti
                     </li>
                   </ul>
-                  <Link to="/" className="btn">
+                  <Link to="/product-details/6" className="btn">
                     Sifariş et
                   </Link>
 
@@ -138,7 +138,7 @@ const Cardsection = () => {
                       <span>63 günədək</span>Güzəşt müddəti
                     </li>
                   </ul>
-                  <Link to="/" className="btn">
+                  <Link to="/product-details/7" className="btn">
                     Sifariş et
                   </Link>
 
@@ -185,7 +185,7 @@ const Cardsection = () => {
                       <span>63 günədək</span>Güzəşt müddəti
                     </li>
                   </ul>
-                  <Link to="/" className="btn">
+                  <Link to="/product-details/8" className="btn">
                     Sifariş et
                   </Link>
 

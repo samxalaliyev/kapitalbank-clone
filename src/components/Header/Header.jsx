@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import Logo from "../../Logo--main.svg";
 import { FaSearch } from "react-icons/fa";
+import { HiSearch } from "react-icons/hi";
 import { FiX } from "react-icons/fi";
 import { IoLocationSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
+  const searchMenu = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -58,7 +63,7 @@ const Header = () => {
               <li>
                 <Link to="/">RU</Link>
               </li>
-              <li>
+              <li onClick={searchMenu}>
                 <FaSearch color="#ef3e42" />
               </li>
             </ul>
@@ -91,6 +96,53 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+        </div>
+        <div className={`header-search${isSearchOpen ? " open" : ""}`}>
+          <div className="search-top">
+            <div className="container">
+              <Link onClick={searchMenu} to="/">
+                <img
+                  class="top-logo"
+                  src="https://www.kapitalbank.az/assets/static/img/small-logo.svg"
+                  alt=""
+                  height="37"
+                />
+              </Link>
+              <form className="main-search">
+                <HiSearch />
+                <input
+                  type="text"
+                  className="search-input"
+                  placeholder="Sorğunuzu daxil edin"
+                />
+                <button>Axtar</button>
+                <Link onClick={searchMenu}>
+                  <img
+                    src="https://www.kapitalbank.az/assets/static/img/close.svg"
+                    alt=""
+                  />
+                </Link>
+              </form>
+            </div>
+          </div>
+          <div className="search-bottom">
+            <div className="container">
+              <ul>
+                <li onClick={searchMenu}>
+                  <Link to="/product-details/5">Birbank kartı al</Link>
+                </li>
+                <li onClick={searchMenu}>
+                  <Link to="/cash">kredit əldə et</Link>
+                </li>
+                <li onClick={searchMenu}>
+                  <Link to="/cards">kart sifarişi</Link>
+                </li>
+                <li onClick={searchMenu}>
+                  <Link to="/cards?tab=Taksit">taksit kartı</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className={`mobile-nav${isOpen ? "-open" : ""}`}>

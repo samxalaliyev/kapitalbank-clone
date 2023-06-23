@@ -34,10 +34,9 @@ const data = [
       rightTitle: " Umico Premium debet ",
     },
     description:
-      "Birbank kartı sizə 30%-dək keşbek, pulsuz köçürmə və nağdlaşdırma, ikiqat ƏDV, şəxsi vəsait qalığına illik 6% və digər üstünlüklər qazandıracaq.",
+      "Kapital Bank və Umiconun birgə təqdim etdiyi, gündəlik alış-verişlərdən keşbek qazandıran premium debet kartdır.",
 
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-umico-premium-debet1657009422.png",
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BPUM.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -64,10 +63,9 @@ const data = [
       rightTitle: " Miles debet ",
     },
     description:
-      "Birbank kartı sizə 30%-dək keşbek, pulsuz köçürmə və nağdlaşdırma, ikiqat ƏDV, şəxsi vəsait qalığına illik 6% və digər üstünlüklər qazandıracaq.",
+      "Birbank Miles kartıyla əməliyyatlar edin, qazandığınız milləri istənilən aviabiletə dəyişin.",
 
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-miles-debet1657009433.png",
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BRML.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -88,9 +86,13 @@ const data = [
   },
   {
     id: 4,
-    title: "Birbank Umico debet ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-umico-debet1657194801.png",
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Umico debet  ",
+    },
+    description:
+      "Kapital Bank və Umiconun birgə təqdim etdiyi, gündəlik alış-verişlərdən keşbek qazandıran unikal debet kartdır.",
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BBUM.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -109,81 +111,15 @@ const data = [
       button2: "Daha ətraflı",
     },
   },
-  {
-    id: 5,
-    title: "Mastercard Platinum debet ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/mastercard-platinum1594371040.png",
-    subItems: {
-      popular: {
-        icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-        text: "POPULYAR",
-        title2: "Mastercard Platinum debet",
-      },
-      items1: "Rahat və təhlükəsiz",
-      items2: "Kartın qiyməti",
-      items3: "3 illik xidmət haqqı",
-      items4: "Bonuslar",
-      items5: "Pulsuz",
-      items6: "Nağdlaşdırma və köçürmə",
-    },
-    buttons: {
-      button1: "Sifariş et",
-      button2: "Daha ətraflı",
-    },
-  },
-  {
-    id: 6,
-    title: "Visa Infinite Miles debet ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/visa-infinite1670322066.png",
-    subItems: {
-      popular: {
-        icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-        text: "POPULYAR",
-        title2: "Visa Infinite Miles debet",
-      },
-      items1: "VIP",
-      items2: "Kartın qiyməti",
-      items3: "Fərdi Bankçılıq paketi üzrə",
-      items4: "Bonuslar",
-      items5: "Pulsuz",
-      items6: "Nağdlaşdırma və köçürmə",
-    },
-    buttons: {
-      button1: "Sifariş et",
-      button2: "Daha ətraflı",
-    },
-  },
-  {
-    id: 7,
-    title: "Mastercard World Elite Miles debet ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/mastercard-worldelite1657282639.png",
-    subItems: {
-      popular: {
-        icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
-        text: "POPULYAR",
-        title2: "Mastercard World Elite Miles debet",
-      },
-      items1: "ELİT",
-      items2: "Kartın qiyməti",
-      items3: "Fərdi Bankçılıq paketi üzrə",
-      items4: "Bonuslar",
-      items5: "Pulsuz",
-      items6: "Nağdlaşdırma və köçürmə",
-    },
-    buttons: {
-      button1: "Sifariş et",
-      button2: "Daha ətraflı",
-    },
-  },
 
   {
-    id: 8,
-    title: "Birbank Cashback taksit",
+    id: 5,
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Cashback taksit",
+    },
     image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-cashback1662035458.png",
+      "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BRCB_BLACK.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -203,10 +139,14 @@ const data = [
     },
   },
   {
-    id: 9,
-    title: "Birbank Umico taksit ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-umico1657178147.png",
+    id: 6,
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Umico taksit",
+    },
+    description:
+      "Kommunal ödənişləri ödə, mobil nömrənin balansını artır və 0.3%-ə qədər qazan.*",
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BBUM.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -226,10 +166,12 @@ const data = [
     },
   },
   {
-    id: 10,
-    title: "Birbank Miles taksit ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-miles1657178213.png",
+    id: 7,
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Miles taksit",
+    },
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BRML.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -249,10 +191,14 @@ const data = [
     },
   },
   {
-    id: 11,
-    title: "Birbank Umico Premium taksit ",
-    image:
-      "https://www.kapitalbank.az/images/cards/M/birbank-umico-premium1657178222.png",
+    id: 8,
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Umico Premium taksit ",
+    },
+    description:
+      "Kommunal ödənişləri ödə, mobil nömrənin balansını artır və 0.5%-ə qədər qazan.",
+    image: "https://gw-onboarding.kapitalbank.az/v1/media/loan/images/BPUM.png",
     subItems: {
       popular: {
         icon: "https://www.kapitalbank.az/assets/static/img/cards-page/fire.svg",
@@ -273,8 +219,11 @@ const data = [
   },
 
   {
-    id: 12,
-    title: "Birbank Digital Card",
+    id: 9,
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Digital Card ",
+    },
     image: "https://www.kapitalbank.az/images/cards/M/prepaid1619522566.png",
     subItems: {
       popular: {
@@ -295,8 +244,12 @@ const data = [
     },
   },
   {
-    id: 13,
-    title: "Hədiyyə kartı",
+    id: 10,
+
+    title: {
+      leftTitle: "Birbank",
+      rightTitle: " Hədiyyə kartı",
+    },
     image: "https://www.kapitalbank.az/images/cards/M/gift-card1592389969.png",
     subItems: {
       popular: {
