@@ -217,7 +217,13 @@ const Header = () => {
                         <div className="search-bottom">
                           <div className="container">
                             <ul className="bottom-ul">
-                              <li className="bottom-li" onClick={searchMenu}>
+                              <li
+                                className="bottom-li"
+                                onClick={() => {
+                                  toggleMenu();
+                                  searchMenu();
+                                }}
+                              >
                                 <Link
                                   className="bottom-link"
                                   to="/product-details/5"
@@ -225,17 +231,35 @@ const Header = () => {
                                   Birbank kartı al
                                 </Link>
                               </li>
-                              <li className="bottom-li" onClick={searchMenu}>
+                              <li
+                                className="bottom-li"
+                                onClick={() => {
+                                  toggleMenu();
+                                  searchMenu();
+                                }}
+                              >
                                 <Link className="bottom-link" to="/cash">
                                   kredit əldə et
                                 </Link>
                               </li>
-                              <li className="bottom-li" onClick={searchMenu}>
+                              <li
+                                className="bottom-li"
+                                onClick={() => {
+                                  toggleMenu();
+                                  searchMenu();
+                                }}
+                              >
                                 <Link className="bottom-link" to="/cards">
                                   kart sifarişi
                                 </Link>
                               </li>
-                              <li className="bottom-li" onClick={searchMenu}>
+                              <li
+                                className="bottom-li"
+                                onClick={() => {
+                                  toggleMenu();
+                                  searchMenu();
+                                }}
+                              >
                                 <Link
                                   className="bottom-link"
                                   to="/cards?tab=Taksit"
