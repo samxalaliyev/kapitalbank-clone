@@ -180,15 +180,75 @@ const Header = () => {
                       </Link>
                     </li>
                   </ul>
-                  <div className="mobile-search"></div>
-                  <ul className="search-close">
-                    <li>
-                      <FaSearch color="#ef3e42" />
-                    </li>
-                    <li className="close" onClick={toggleMenu} id="close">
-                      <FiX color="#ef3e42" />
-                    </li>
-                  </ul>
+                  <div className="mobile-search">
+                    <ul className="search-close">
+                      <li className="mobile-search-button" onClick={searchMenu}>
+                        <FaSearch color="#ef3e42" />
+                      </li>
+                      <li className="close" onClick={toggleMenu} id="close">
+                        <FiX color="#ef3e42" />
+                      </li>
+                      <div
+                        className={`header-search${
+                          isSearchOpen ? " open" : ""
+                        }`}
+                      >
+                        <div className="search-top">
+                          <div className="container">
+                            <Link onClick={searchMenu} to="/"></Link>
+                            <form className="main-search">
+                              <HiSearch />
+                              <input
+                                type="text"
+                                className="search-input"
+                                placeholder="Sorğunuzu daxil edin"
+                              />
+                              <button type="submit">Axtar</button>
+                              <div
+                                className="close-search"
+                                onClick={searchMenu}
+                                id="close"
+                              >
+                                <FiX color="#ef3e42" className="close-icon" />
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div className="search-bottom">
+                          <div className="container">
+                            <ul className="bottom-ul">
+                              <li className="bottom-li" onClick={searchMenu}>
+                                <Link
+                                  className="bottom-link"
+                                  to="/product-details/5"
+                                >
+                                  Birbank kartı al
+                                </Link>
+                              </li>
+                              <li className="bottom-li" onClick={searchMenu}>
+                                <Link className="bottom-link" to="/cash">
+                                  kredit əldə et
+                                </Link>
+                              </li>
+                              <li className="bottom-li" onClick={searchMenu}>
+                                <Link className="bottom-link" to="/cards">
+                                  kart sifarişi
+                                </Link>
+                              </li>
+                              <li className="bottom-li" onClick={searchMenu}>
+                                <Link
+                                  className="bottom-link"
+                                  to="/cards?tab=Taksit"
+                                >
+                                  taksit kartı
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
