@@ -97,7 +97,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/credies" className="li-link">
+                <Link to="/" className="li-link">
                   Kreditlər
                 </Link>
 
@@ -106,12 +106,12 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="ipotecs" className="li-link">
+                <Link to="/" className="li-link">
                   İpotekalar
                 </Link>
               </li>
               <li className="ul-child">
-                <Link to="/deposits" className="li-link">
+                <Link to="/" className="li-link">
                   Depozitlər
                 </Link>
                 <div className="drop-depozit">
@@ -119,7 +119,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/transfer" className="li-link">
+                <Link to="/" className="li-link">
                   Pul Köçürmələri
                 </Link>
                 <div className="drop-money">
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/services" className="li-link">
+                <Link to="/" className="li-link">
                   Onlayn Xidmətlər
                 </Link>
                 <div className="drop-online">
@@ -135,12 +135,12 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="ul-child">
-                <Link to="/campains" className="li-link">
+                <Link to="/" className="li-link">
                   Kampaniyalar
                 </Link>
               </li>
               <li className="ul-child">
-                <Link to="personal-banking" className="li-link">
+                <Link to="/" className="li-link">
                   Fərdi Bankçılıq
                 </Link>
               </li>
