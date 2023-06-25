@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DropdownCredits = () => {
   return (
@@ -34,9 +35,9 @@ const DropdownCredits = () => {
                   <p className="child-middle">
                     30000 AZN dək Gündəlik tələbat krediti
                   </p>
-                  <a href="#" className="btn">
+                  <Link to="/cash" className="btn">
                     Bir kliklə sifariş et
-                  </a>
+                  </Link>
                 </div>
                 <div className="right-right-child">
                   <img src="https://www.kapitalbank.az/assets/static/img/main-page/daily-loan3.png" />

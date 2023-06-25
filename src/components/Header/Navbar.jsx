@@ -79,9 +79,9 @@ const Navbar = () => {
                               başlayan keşbek, faizsiz və komissiyasız taksit
                               imkanı verən unikal bir kartdır.
                             </p>
-                            <a href="#" className="btn">
+                            <Link to="/product-details/5" className="btn">
                               Bir kliklə sifariş et
-                            </a>
+                            </Link>
                           </div>
                           <div className="right-child-2">
                             <img

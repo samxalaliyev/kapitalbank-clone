@@ -33,9 +33,9 @@ const DropdownDepozit = () => {
                     Yüksək faiz əldə etməklə yanaşı müddətin yarısınadək məbləğı
                     artırın.
                   </p>
-                  <a href="#" className="btn">
+                  <Link to="/" className="btn">
                     Daha ətraflı
-                  </a>
+                  </Link>
                 </div>
                 <div className="right-right-child">
                   <img src="https://www.kapitalbank.az/assets/static/img/menu/deposits.png" />

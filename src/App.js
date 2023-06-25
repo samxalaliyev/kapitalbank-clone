@@ -24,13 +24,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/product-details/:id" element={<Products />} />
-        <Route path="/credies" element={<Credies />} />
-        <Route path="/ipotecs" element={<Ipotecs />} />
-        <Route path="/deposits" element={<Deposits />} />
-        <Route path="/transfer" element={<Transfer />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/campains" element={<Campains />} />
-        <Route path="/personal-banking" element={<PersonalBank />} />
+        <Route path="/" element={<Credies />} />
+        <Route path="/" element={<Ipotecs />} />
+        <Route path="/" element={<Deposits />} />
+        <Route path="/" element={<Transfer />} />
+        <Route path="/" element={<Services />} />
+        <Route path="/" element={<Campains />} />
+        <Route path="/" element={<PersonalBank />} />
         <Route path="/cash" element={<CashMoney />} />
         <Route />
       </Routes>
