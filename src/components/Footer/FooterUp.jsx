@@ -34,7 +34,7 @@ const FooterUp = () => {
               <h3>Məhsullar</h3>
               <ul>
                 <li>
-                  <Link>Kartlar</Link>
+                  <Link to="/cards">Kartlar</Link>
                 </li>
                 <li>
                   <Link>Kreditlər</Link>
