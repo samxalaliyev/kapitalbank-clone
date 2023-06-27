@@ -14,12 +14,14 @@ import FooterUp from "./components/Footer/FooterUp";
 import FooterBottom from "./components/Footer/FooterBottom";
 import CashMoney from "./pages/CashMoney";
 import Products from "./pages/Products";
+import ScrollTo from "./components/ScrollTo";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Navbar />
+      <ScrollTo />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cards" element={<Cards />} />
