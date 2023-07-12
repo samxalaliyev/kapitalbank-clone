@@ -16,8 +16,10 @@
       padding: 32px;
       background: #f9fafb;
       border-radius: 8px;
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
         padding: 16px 8px;
       }
       .operation-li {
@@ -30,6 +32,14 @@
         text-align: center;
         display: block;
         transition: 0.3s linear;
+        @media (max-width: 991px) {
+          width: 49%;
+          margin-bottom: 20px;
+          &:last-child {
+            width: 100%;
+          }
+        }
+
         @media (max-width: 768px) {
           margin-bottom: 16px !important;
           width: 100% !important;

@@ -1,14 +1,14 @@
 .header {
   width: 100%;
   height: 83px;
-  @media (max-width: 768px) {
+  @media (max-width: 986px) {
     border-bottom: 2px solid #e8ecf1;
     height: initial;
   }
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    @media (max-width: 768px) {
+    @media (max-width: 986px) {
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
@@ -22,7 +22,7 @@
       //Main Logo
       a {
         img {
-          @media (max-width: 768px) {
+          @media (max-width: 986px) {
             width: 150px;
           }
         }
@@ -32,7 +32,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        @media (max-width: 768px) {
+        @media (max-width: 986px) {
           display: none;
         }
         li {
@@ -63,7 +63,7 @@
       .mobile-ul {
         display: none;
         justify-content: flex-end;
-        @media (max-width: 768px) {
+        @media (max-width: 986px) {
           display: flex;
           li {
             display: flex;
@@ -173,7 +173,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 986px) {
   .mobile-nav {
     display: none;
   }
@@ -490,7 +490,7 @@
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 986px) {
   .mobile-nav-open {
     display: none;
   }

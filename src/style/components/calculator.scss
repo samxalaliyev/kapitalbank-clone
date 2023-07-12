@@ -11,6 +11,10 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    @media (min-width: 768px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
     @media (min-width: 320px) and (max-width: 768px) {
       width: 100%;
       padding-left: 15px;
@@ -30,9 +34,11 @@
       display: flex;
       justify-content: space-between;
       padding-top: 30px;
-      flex-wrap: wrap;
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
       .calculator-left {
-        @media (min-width: 320px) and (max-width: 768px) {
+        @media (min-width: 320px) and (max-width: 991px) {
           width: 100%;
         }
         h3 {
@@ -55,7 +61,7 @@
           flex-direction: column;
           justify-content: space-between;
           height: 250px;
-          @media (min-width: 320px) and (max-width: 768px) {
+          @media (min-width: 320px) and (max-width: 991px) {
             max-width: 100%;
           }
           .range-values {
@@ -64,7 +70,7 @@
             margin: 15px 0;
             justify-content: space-between;
             font-size: 14px;
-            @media (min-width: 320px) and (max-width: 768px) {
+            @media (min-width: 320px) and (max-width: 991px) {
               width: 100%;
               font-size: 12px;
               opacity: 0.8;
@@ -78,7 +84,7 @@
             border: 1px solid rgb(128, 128, 128, 0.5);
             border-bottom: 0;
             border-radius: 8px;
-            @media (min-width: 320px) and (max-width: 768px) {
+            @media (min-width: 320px) and (max-width: 991px) {
               width: 100%;
             }
             label {
@@ -132,7 +138,7 @@
         border: 1px solid #eaeaea;
         padding: 24px;
         text-align: center;
-        margin-left: 95px;
+        margin-left: 30px;
         min-height: 329px;
         display: flex;
         flex-direction: column;
