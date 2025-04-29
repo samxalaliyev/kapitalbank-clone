@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### To Run with Docker
+install docker and apply this command: 
+`docker build -t kapital-web . ` .
+`docker run -d --name kapital-web -p 8099:3000 kapital-web ` .
+Open [http://localhost:8099](http://localhost:8099) to view it in your browser.
